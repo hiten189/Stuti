@@ -2,23 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>STUTI — Opening Soon in Jalandhar</title>
-<meta name="description" content="STUTI — premium unstitched and ready-to-wear ladies suits, rooted in tradition. Opening soon near Jyoti Chowk, Jalandhar.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+<meta name="theme-color" content="#1f0207">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>STUTI — Exclusive Ladies Ethnic Wear | Now Open in Jalandhar</title>
+<meta name="description" content="STUTI is Now Open! Flagship store opened on the auspicious day of Diwali (8 Nov 2026) near Jyoti Chowk, Jalandhar. Specially handpicked unstitched fabrics and ready-to-wear ladies suits. Simple & elegant, semi-formal, formal & festive party wear. Winter velvet collection coming soon! Accepting online orders via WhatsApp & Instagram.">
 <link rel="icon" href="stuti-logo-crop.png">
+
+<!-- Open Graph / Meta -->
+<meta property="og:title" content="STUTI — Exclusive Ladies Ethnic Wear | Now Open in Jalandhar">
+<meta property="og:description" content="Now Open in Jalandhar! Opened on the auspicious day of Diwali (8 Nov 2026). Specially chosen suits — simple, semi-formal, formal & festive party wear. Winter velvet edit coming soon! Visit our store or order online via WhatsApp & Instagram Reels!">
+<meta property="og:image" content="stuti-suits.jpg">
+<meta property="og:type" content="website">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "ClothingStore",
   "name": "STUTI",
-  "description": "Premium unstitched and ready-to-wear ladies suits.",
+  "description": "Exclusive specially handpicked unstitched and ready-to-wear ladies ethnic suits in Jalandhar. Simple & elegant, semi-formal, formal, and festive party wear. Store opened on the auspicious day of Diwali, 8 November 2026. Winter velvet collection coming soon.",
   "email": "stutijalandhar@gmail.com",
   "telephone": "+91-76967-64505",
+  "hasMap": "https://maps.app.goo.gl/ZurJmbqXFEqZykMXA",
+  "url": "https://instagram.com/stuti_jalandhar",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "ES45, Ground Floor, Nakodar Road, Near Jyoti Chowk, Opposite Jyoti Mall",
@@ -27,45 +38,55 @@
     "postalCode": "144001",
     "addressCountry": "IN"
   },
-  "sameAs": ["https://instagram.com/stuti_jalandhar"]
+  "sameAs": [
+    "https://instagram.com/stuti_jalandhar",
+    "https://maps.app.goo.gl/ZurJmbqXFEqZykMXA"
+  ]
 }
 </script>
 
 <style>
   :root{
-    --bg-0: #0f0103;
-    --bg-1: #240309;
-    --bg-2: #3a0a14;
+    --bg-0: #0a0103;
+    --bg-1: #1f0207;
+    --bg-2: #340811;
     --gold: #dcb343;
     --gold-soft: #ebd08c;
-    --gold-line: rgba(220, 179, 67, 0.3);
-    --gold-glow: rgba(220, 179, 67, 0.15);
-    --ivory: #f8efe0;
-    --ivory-dim: #d3c0ab;
+    --gold-bright: #fff2b2;
+    --gold-line: rgba(220, 179, 67, 0.32);
+    --gold-glow: rgba(220, 179, 67, 0.2);
+    --ivory: #fcf6eb;
+    --ivory-dim: #d8c7b5;
     --serif: 'Cormorant Garamond', Georgia, serif;
-    --sans: 'Jost', 'Segoe UI', sans-serif;
+    --sans: 'Jost', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --mx: 50%;
     --my: 35%;
   }
 
-  *{ margin:0; padding:0; box-sizing:border-box; }
-  html{ -webkit-text-size-adjust:100%; }
+  *{ margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html{ 
+    -webkit-text-size-adjust:100%; 
+    scroll-behavior:smooth;
+    background-color: var(--bg-0);
+  }
 
   body{
-    min-height:100svh;
-    background: radial-gradient(circle at 50% -20%, var(--bg-2) 0%, var(--bg-1) 50%, var(--bg-0) 100%);
+    min-height:100vh;
+    min-height:100dvh;
+    background: radial-gradient(circle at 50% -10%, var(--bg-2) 0%, var(--bg-1) 50%, var(--bg-0) 100%);
     color:var(--ivory);
     font-family:var(--sans);
     display:flex;
     justify-content:center;
     align-items:flex-start;
-    padding:8vh 16px 8vh;
+    padding:3vh 10px 14vh;
     position:relative;
     overflow-x:hidden;
     overflow-y:auto;
   }
 
-  body::before{ /* premium fabric texture */
+  /* Luxurious fabric texture overlay */
+  body::before{
     content:'';
     position:absolute; inset:0;
     pointer-events:none;
@@ -77,10 +98,12 @@
 
   .ambient-light {
     position: absolute;
-    width: 60vw;
-    height: 60vh;
-    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-    top: 50%;
+    width: 80vw;
+    height: 80vh;
+    max-width: 950px;
+    max-height: 950px;
+    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 65%);
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
@@ -89,8 +112,8 @@
   }
 
   @keyframes pulseLight {
-    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(0.9); }
-    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+    0% { opacity: 0.45; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 0.95; transform: translate(-50%, -50%) scale(1.1); }
   }
 
   /* drifting gold sparks */
@@ -100,7 +123,7 @@
     width:3px; height:3px;
     background:var(--gold-soft);
     border-radius:50%;
-    box-shadow: 0 0 8px 2px rgba(235, 208, 140, 0.8);
+    box-shadow: 0 0 8px 2px rgba(235, 208, 140, 0.85);
     opacity:0;
     animation: floatSpark 6s ease-in-out infinite;
   }
@@ -111,7 +134,7 @@
   }
 
   /* =========================================================
-     FULL-SCREEN INTRO (Enhanced)
+     FULL-SCREEN INTRO
   ========================================================== */
   #intro{
     position:fixed; inset:0; z-index:80;
@@ -136,7 +159,7 @@
   }
   .intro-mark-wrap{
     position: relative;
-    width:min(42vw, 170px);
+    width:min(42vw, 160px);
     margin-bottom:12px;
     z-index: 1;
   }
@@ -167,7 +190,7 @@
   }
   .intro-tag{
     font-family:var(--serif); font-style:italic;
-    font-size:clamp(1.1rem, 3.5vw, 1.4rem);
+    font-size:clamp(1.05rem, 3.5vw, 1.35rem);
     color:var(--gold-soft); letter-spacing:0.04em; opacity:0.9;
     z-index: 1;
   }
@@ -183,7 +206,7 @@
     100% { opacity: 0.8; }
   }
 
-  /* large "Opening Soon" that flashes in as the intro clears */
+  /* large "Now Open" shimmer in intro */
   .flash-opening{
     position:fixed; inset:0; z-index:70;
     display:flex; align-items:center; justify-content:center;
@@ -197,7 +220,7 @@
   body.stage-b .flash-opening{ opacity:0; transform:scale(0.92) translateY(-6vh); }
   .flash-opening span{
     font-family:var(--serif); font-weight:600; text-align:center;
-    font-size:clamp(2.5rem, 11vw, 5rem);
+    font-size:clamp(2.4rem, 10vw, 4.6rem);
     background:linear-gradient(110deg, var(--gold-soft) 10%, #fff7e6 40%, var(--gold) 70%, var(--gold-soft) 100%);
     background-size:200% auto;
     -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
@@ -206,29 +229,30 @@
   }
 
   /* =========================================================
-     PAGE CONTENT (Enhanced Glassmorphism)
+     STAGE & CARD (RESPONSIVE: MOBILE FULLSCREEN + LAPTOP 2-COLUMN)
   ========================================================== */
   .stage{
     position:relative;
     z-index:10;
     width:100%;
-    max-width:460px;
+    max-width:540px;
     perspective:1200px;
-    margin: auto;
+    margin: 0 auto;
+    transition: max-width .4s ease;
   }
 
   .card{
     position:relative;
     text-align:center;
-    padding:48px 36px;
-    background: rgba(36, 3, 9, 0.45);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid rgba(220, 179, 67, 0.15);
-    border-top: 1px solid rgba(220, 179, 67, 0.4);
-    border-left: 1px solid rgba(220, 179, 67, 0.3);
-    border-radius: 16px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    padding:34px 18px;
+    background: rgba(31, 2, 7, 0.58);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
+    border: 1px solid rgba(220, 179, 67, 0.22);
+    border-top: 1px solid rgba(220, 179, 67, 0.5);
+    border-left: 1px solid rgba(220, 179, 67, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.08);
     transform-style:preserve-3d;
     transition:transform .4s cubic-bezier(.2,.8,.2,1);
     will-change:transform;
@@ -236,33 +260,37 @@
 
   .sheen{
     position:absolute; inset:0;
-    border-radius: 16px;
+    border-radius: 18px;
     pointer-events:none;
-    background:radial-gradient(circle at var(--mx) var(--my), rgba(235, 208, 140, 0.12), transparent 60%);
+    background:radial-gradient(circle at var(--mx) var(--my), rgba(235, 208, 140, 0.14), transparent 60%);
     mix-blend-mode:screen;
   }
 
-  /* staged reveal groups, driven by body classes from the intro timeline */
-  .g-header, .g-heading, .g-date, .g-details{
+  /* Staged reveal groups */
+  .g-header, .g-heading, .g-showcase, .g-collections, .g-online, .g-actions, .g-address{
     opacity:0;
     transform:translateY(20px);
     transition:opacity .8s cubic-bezier(.2,1,.3,1), transform .8s cubic-bezier(.2,1,.3,1);
   }
   body.stage-a .g-header{ opacity:1; transform:none; }
   body.stage-b .g-heading{ opacity:1; transform:none; }
-  body.stage-c .g-date{ opacity:1; transform:none; }
-  body.stage-d .g-details{ opacity:1; transform:none; }
+  body.stage-c .g-showcase{ opacity:1; transform:none; }
+  body.stage-d .g-collections, 
+  body.stage-d .g-online, 
+  body.stage-d .g-actions, 
+  body.stage-d .g-address{ opacity:1; transform:none; }
 
+  /* Header Branding */
   .mark-wrap{
     position:relative;
-    width:150px;
-    margin:0 auto 8px;
+    width:130px;
+    margin:0 auto 6px;
   }
   .mark-wrap::before{
     content:'';
     position:absolute;
     inset:-30%;
-    background:radial-gradient(circle, rgba(220, 179, 67, 0.2) 0%, transparent 70%);
+    background:radial-gradient(circle, rgba(220, 179, 67, 0.22) 0%, transparent 70%);
     filter:blur(15px);
     animation: pulseLogo 4s ease-in-out infinite alternate;
     z-index:0;
@@ -279,15 +307,15 @@
     filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
     transition:transform .5s cubic-bezier(.2,.8,.2,1);
   }
-  .mark-wrap:hover .mark{ transform:scale(1.05); }
+  .mark-wrap:hover .mark{ transform:scale(1.04); }
 
   .brand-text {
     font-family: var(--serif);
     font-weight: 500;
-    font-size: 2.8rem;
+    font-size: clamp(2.3rem, 7.5vw, 2.9rem);
     letter-spacing: 0.2em;
     margin-right: -0.2em;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
     color: var(--gold);
     background:linear-gradient(110deg, var(--gold-soft) 10%, #fff7e6 40%, var(--gold) 70%);
     -webkit-background-clip:text; background-clip:text;
@@ -299,13 +327,13 @@
     font-family:var(--serif);
     font-style:italic;
     font-weight:400;
-    font-size:1.15rem;
+    font-size:clamp(1rem, 3.4vw, 1.15rem);
     color:var(--gold-soft);
     letter-spacing:0.04em;
-    margin-bottom:28px;
+    margin-bottom:20px;
   }
 
-  .rule{ display:flex; align-items:center; gap:16px; margin:0 0 28px; }
+  .rule{ display:flex; align-items:center; gap:16px; margin:0 0 18px; }
   .rule::before,.rule::after{ content:''; flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--gold-line), transparent); }
   .rule span{
     width:6px; height:6px; border:1px solid var(--gold);
@@ -313,69 +341,373 @@
     box-shadow: 0 0 8px var(--gold-glow);
   }
 
+  /* Festive Diya Badge (Opened on the auspicious day of Diwali, 8 Nov 2026) */
+  .festive-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:6px 18px;
+    border-radius:999px;
+    background:linear-gradient(90deg, rgba(220, 179, 67, 0.18), rgba(220, 179, 67, 0.08), rgba(220, 179, 67, 0.18));
+    border:1px solid rgba(220, 179, 67, 0.45);
+    color:var(--gold-soft);
+    font-size:clamp(0.68rem, 2.3vw, 0.75rem);
+    font-weight:500;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    margin-bottom:10px;
+    box-shadow:0 0 16px rgba(220, 179, 67, 0.2);
+  }
+  .festive-badge svg{ width:14px; height:14px; color:var(--gold); flex-shrink:0; }
+
   .status{
     font-family:var(--serif);
     font-weight:600;
-    font-size:2.4rem;
-    line-height:1.2;
+    font-size:clamp(2.1rem, 7vw, 2.85rem);
+    line-height:1.15;
     background:linear-gradient(110deg, var(--gold-soft) 10%, #fff7e6 40%, var(--gold) 70%, var(--gold-soft) 100%);
     background-size:200% auto;
     -webkit-background-clip:text; background-clip:text;
     -webkit-text-fill-color:transparent;
     animation: shimmerGold 6s linear infinite;
-    margin-bottom:12px;
+    margin-bottom:6px;
     letter-spacing: 0.02em;
   }
   @keyframes shimmerGold{ to{ background-position:200% center; } }
 
+  .status-sub{
+    font-family:var(--sans);
+    font-size:0.78rem;
+    font-weight:500;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:10px;
+  }
+
   .about{
-    font-size:0.95rem; font-weight:300;
-    color:var(--ivory-dim); line-height:1.7;
-    max-width:300px; margin:0 auto 32px;
+    font-size:0.9rem; font-weight:300;
+    color:var(--ivory-dim); line-height:1.6;
+    max-width:440px; margin:0 auto 20px;
   }
+  .about b{ color:var(--gold-soft); font-weight:500; }
 
-  .date-box{
-    position:relative;
-    display:inline-flex;
+  /* =========================================================
+     IN-STORE SUITS PHOTO SHOWCASE (INTERACTIVE)
+  ========================================================== */
+  .showcase-frame {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0 auto 22px;
+    border: 1px solid rgba(220, 179, 67, 0.4);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65), 0 0 25px rgba(220, 179, 67, 0.15);
+    background: rgba(10, 1, 3, 0.7);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .showcase-frame:hover {
+    border-color: var(--gold);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(220, 179, 67, 0.28);
+    transform: translateY(-2px);
+  }
+  .showcase-img {
+    width: 100%;
+    height: auto;
+    max-height: 380px;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .showcase-frame:hover .showcase-img {
+    transform: scale(1.03);
+  }
+  .showcase-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(10,1,3,0.3) 50%, rgba(10,1,3,0.92) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 16px;
+    pointer-events: none;
+  }
+  .showcase-badge {
+    align-self: flex-start;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border:1px solid rgba(220, 179, 67, 0.4);
-    background: rgba(220, 179, 67, 0.05);
-    padding:12px 32px;
-    margin-bottom:36px;
-    border-radius: 4px;
-    font-family:var(--serif);
-    font-size:1.15rem;
-    color:var(--gold-soft);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2), inset 0 0 10px rgba(220, 179, 67, 0.05);
-    transition:all .3s ease;
+    gap: 6px;
+    background: rgba(10, 1, 3, 0.85);
+    border: 1px solid rgba(220, 179, 67, 0.45);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold-soft);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   }
-  .date-box:hover{ 
-    border-color:var(--gold); 
-    background: rgba(220, 179, 67, 0.1);
-    transform:translateY(-2px); 
-    box-shadow: 0 8px 25px rgba(220, 179, 67, 0.15);
+  .showcase-content {
+    text-align: left;
   }
-  .date-box b{ color:var(--gold); font-weight:600; margin-left:6px; }
+  .showcase-title {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    color: var(--ivory);
+    margin-bottom: 2px;
+    font-weight: 600;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+  }
+  .showcase-sub {
+    font-size: 0.78rem;
+    color: var(--gold-soft);
+    line-height: 1.4;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+  }
 
-  .cta{ display:flex; flex-direction:column; gap:14px; margin-bottom:36px; }
+  /* =========================================================
+     COLLECTIONS SECTION
+  ========================================================== */
+  .collections-wrap{
+    margin-bottom:22px;
+    text-align:left;
+  }
+  .collections-title{
+    text-align:center;
+    font-family:var(--sans);
+    font-size:0.74rem;
+    letter-spacing:0.2em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+  }
+  .collections-title::before, .collections-title::after{
+    content:'';
+    height:1px;
+    width:28px;
+    background:var(--gold-line);
+  }
+  .collections-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .col-card{
+    background:rgba(10, 1, 3, 0.52);
+    border:1px solid rgba(220, 179, 67, 0.2);
+    border-radius:10px;
+    padding:13px 15px;
+    position:relative;
+    transition:all 0.3s ease;
+  }
+  .col-card:hover{
+    border-color:rgba(220, 179, 67, 0.5);
+    background:rgba(31, 2, 7, 0.75);
+    transform:translateY(-2px);
+  }
+  .col-card-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:8px;
+    margin-bottom:4px;
+  }
+  .col-card-title{
+    font-family:var(--serif);
+    font-size:1.1rem;
+    color:var(--ivory);
+    font-weight:500;
+    letter-spacing:0.02em;
+    display:flex;
+    align-items:center;
+    gap:7px;
+  }
+  .col-card-title svg{ width:15px; height:15px; color:var(--gold); flex-shrink:0; }
+  .col-card-tag{
+    font-family:var(--sans);
+    font-size:0.65rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--gold-soft);
+    background:rgba(220, 179, 67, 0.1);
+    border:1px solid rgba(220, 179, 67, 0.25);
+    padding:2px 7px;
+    border-radius:4px;
+    white-space:nowrap;
+  }
+  .col-card-desc{
+    font-size:0.79rem;
+    color:var(--ivory-dim);
+    line-height:1.45;
+  }
+
+  /* Velvet / Winter Collection Spotlight */
+  .col-card.velvet{
+    background:linear-gradient(135deg, rgba(62, 10, 22, 0.75) 0%, rgba(20, 2, 5, 0.9) 100%);
+    border:1px solid rgba(220, 179, 67, 0.45);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    position:relative;
+    overflow:hidden;
+  }
+  .col-card.velvet::before{
+    content:'';
+    position:absolute; inset:0;
+    background:radial-gradient(circle at top right, rgba(220, 179, 67, 0.12), transparent 70%);
+    pointer-events:none;
+  }
+  .col-card.velvet:hover{
+    border-color:var(--gold);
+    box-shadow:0 8px 25px rgba(220, 179, 67, 0.25);
+  }
+  .badge-progress{
+    font-family:var(--sans);
+    font-size:0.64rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    background:linear-gradient(135deg, #e6b839 0%, #b3851b 100%);
+    color:#120104;
+    padding:3px 8px;
+    border-radius:4px;
+    font-weight:600;
+    white-space:nowrap;
+    box-shadow:0 2px 6px rgba(0,0,0,0.3);
+  }
+
+  /* =========================================================
+     ONLINE ORDERS & INSTAGRAM REELS BANNER
+  ========================================================== */
+  .online-banner{
+    position:relative;
+    background:linear-gradient(135deg, rgba(220, 179, 67, 0.12) 0%, rgba(56, 10, 19, 0.55) 100%);
+    border:1px solid rgba(220, 179, 67, 0.35);
+    border-radius:14px;
+    padding:18px 16px;
+    margin-bottom:22px;
+    text-align:center;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    overflow:hidden;
+  }
+  .online-banner::before{
+    content:'';
+    position:absolute; top:-50%; left:-50%; width:200%; height:200%;
+    background:radial-gradient(circle at center, rgba(220, 179, 67, 0.08), transparent 70%);
+    pointer-events:none;
+  }
+  .live-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+    background:rgba(10, 1, 3, 0.8);
+    border:1px solid rgba(220, 179, 67, 0.35);
+    padding:4px 12px;
+    border-radius:20px;
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    color:var(--gold-soft);
+    font-weight:500;
+    text-transform:uppercase;
+    margin-bottom:8px;
+  }
+  .live-dot{
+    width:7px; height:7px;
+    border-radius:50%;
+    background:#34d399;
+    box-shadow:0 0 8px #34d399;
+    animation: livePulse 1.8s infinite;
+  }
+  @keyframes livePulse{
+    0%{ transform: scale(0.9); opacity: 0.7; }
+    50%{ transform: scale(1.3); opacity: 1; }
+    100%{ transform: scale(0.9); opacity: 0.7; }
+  }
+  .online-title{
+    font-family:var(--serif);
+    font-size:1.22rem;
+    font-weight:600;
+    color:var(--ivory);
+    margin-bottom:5px;
+    letter-spacing: 0.02em;
+  }
+  .online-title a{
+    color:var(--gold-soft);
+    text-decoration:none;
+    border-bottom:1px dotted var(--gold-line);
+    transition: color .25s ease, border-color .25s ease;
+  }
+  .online-title a:hover{
+    color:#fff;
+    border-bottom-color:var(--gold);
+  }
+  .online-text{
+    font-size:0.84rem;
+    color:var(--ivory-dim);
+    line-height:1.55;
+    margin-bottom:12px;
+  }
+  .reels-callout{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    color:var(--gold-soft);
+    font-size:0.8rem;
+    font-weight:500;
+    margin-bottom:12px;
+    letter-spacing:0.02em;
+  }
+  .reels-callout svg{ width:15px; height:15px; flex-shrink:0; color:var(--gold); }
+  .order-tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+  }
+  .order-tag{
+    font-size:0.72rem;
+    padding:4px 10px;
+    background:rgba(220, 179, 67, 0.08);
+    border:1px solid rgba(220, 179, 67, 0.22);
+    border-radius:20px;
+    color:var(--gold-soft);
+    letter-spacing:0.02em;
+  }
+
+  /* =========================================================
+     PRIMARY CTA ACTION BUTTONS
+  ========================================================== */
+  .cta{ display:flex; flex-direction:column; gap:11px; margin-bottom:20px; }
+  .cta-row{ display:flex; flex-direction:column; gap:11px; }
 
   .btn{
     position:relative;
     overflow:hidden;
-    display:flex; align-items:center; justify-content:center; gap:12px;
-    padding:16px 20px;
-    border-radius: 6px;
-    font-family:var(--sans); font-size:0.95rem; font-weight:500; letter-spacing: 0.03em;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    padding:15px 18px;
+    border-radius: 9px;
+    font-family:var(--sans); font-size:0.92rem; font-weight:500; letter-spacing: 0.03em;
     text-decoration:none;
     transition:all .35s cubic-bezier(0.25, 1, 0.5, 1);
   }
-  .btn svg{ width:20px; height:20px; flex-shrink:0; transition:transform .3s ease; }
+  .btn svg{ width:19px; height:19px; flex-shrink:0; transition:transform .3s ease; }
   
+  /* Primary WhatsApp */
   .btn-primary{ 
     background:linear-gradient(135deg, var(--gold) 0%, #b89121 100%); 
     color:#120104; 
     border:none;
+    font-weight:600;
     box-shadow: 0 4px 15px rgba(220, 179, 67, 0.3);
   }
   .btn-primary::after {
@@ -392,21 +724,49 @@
   }
   .btn-primary:hover::after { left: 200%; }
   
+  /* Secondary Instagram */
   .btn-secondary{ 
-    background:rgba(255,255,255,0.03); 
+    background:rgba(255,255,255,0.04); 
     color:var(--gold-soft); 
     border:1px solid var(--gold-line);
     backdrop-filter: blur(5px);
   }
   .btn-secondary:hover{ 
-    background:rgba(220, 179, 67, 0.08); 
+    background:rgba(220, 179, 67, 0.12); 
     border-color:var(--gold);
     transform: translateY(-2px);
   }
 
+  /* Single Highlighted Google Maps Action */
+  .btn-maps{
+    background: linear-gradient(135deg, rgba(220, 179, 67, 0.22) 0%, rgba(65, 12, 23, 0.85) 100%);
+    color: var(--gold-bright);
+    border: 1.5px solid rgba(220, 179, 67, 0.65);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45), 0 0 16px rgba(220, 179, 67, 0.25);
+    font-weight: 600;
+  }
+  .btn-maps:hover{
+    background: linear-gradient(135deg, rgba(220, 179, 67, 0.38) 0%, rgba(85, 15, 30, 0.95) 100%);
+    border-color: var(--gold);
+    color: #fff;
+    box-shadow: 0 6px 28px rgba(220, 179, 67, 0.45);
+    transform: translateY(-2px);
+  }
+
+  /* Address & Footer */
   address{
     font-style:normal; font-size:0.85rem; font-weight:300;
-    color:var(--ivory-dim); line-height:1.8;
+    color:var(--ivory-dim); line-height:1.75;
+  }
+  .addr-label{
+    font-family:var(--sans);
+    font-size:0.75rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    display:inline-block;
+    margin-bottom:4px;
   }
   address a{
     color:var(--ivory-dim); text-decoration:none;
@@ -418,19 +778,179 @@
     border-bottom-color: var(--gold-soft);
   }
 
-  .divider-thin{ width:40px; height:1px; background:var(--gold-line); margin:20px auto; }
+  .divider-thin{ width:40px; height:1px; background:var(--gold-line); margin:16px auto; }
 
-  @media (min-width:480px){
-    .card{ padding:56px 48px; }
-    .mark-wrap{ width:170px; }
-    .status{ font-size:2.6rem; }
-    .cta{ flex-direction:row; }
-    .btn{ flex:1; }
+  /* =========================================================
+     FLOATING QUICK-ACTION BAR (MOBILE & SMARTPHONES)
+  ========================================================== */
+  .floating-bar {
+    position: fixed;
+    bottom: max(12px, env(safe-area-inset-bottom, 12px));
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+    max-width: 440px;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7px;
+    padding: 7px 9px;
+    background: rgba(20, 2, 6, 0.88);
+    backdrop-filter: blur(24px) saturate(190%);
+    -webkit-backdrop-filter: blur(24px) saturate(190%);
+    border: 1px solid rgba(220, 179, 67, 0.45);
+    border-radius: 999px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.8), 0 0 20px rgba(220, 179, 67, 0.18);
+    transition: all 0.3s ease;
+  }
+  .floating-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 8px;
+    border-radius: 999px;
+    font-family: var(--sans);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+  }
+  .floating-btn svg {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+  .fb-wa {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(37, 211, 102, 0.35);
+  }
+  .fb-wa:active { transform: scale(0.96); }
+  
+  .fb-insta {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(225, 48, 108, 0.35);
+  }
+  .fb-insta:active { transform: scale(0.96); }
+  
+  .fb-map {
+    background: rgba(220, 179, 67, 0.18);
+    border: 1px solid rgba(220, 179, 67, 0.45);
+    color: var(--gold-soft);
+  }
+  .fb-map:active { transform: scale(0.96); background: rgba(220, 179, 67, 0.3); }
+
+  /* =========================================================
+     RESPONSIVE BREAKPOINTS (ALL PHONES, SAMSUNG FOLD, LAPTOP)
+  ========================================================== */
+  
+  /* Ultra-narrow devices (Samsung Galaxy Fold cover screen: ~280px - 340px) */
+  @media (max-width: 340px){
+    body{ padding: 2vh 6px 14vh; }
+    .card{ padding: 22px 10px; border-radius: 14px; }
+    .mark-wrap{ width: 100px; }
+    .brand-text{ font-size: 2.1rem; letter-spacing: 0.14em; }
+    .tagline{ font-size: 0.92rem; }
+    .status{ font-size: 1.85rem; }
+    .status-sub{ font-size: 0.7rem; }
+    .about{ font-size: 0.82rem; }
+    .showcase-img{ max-height: 280px; }
+    .showcase-title{ font-size: 1.1rem; }
+    .showcase-sub{ font-size: 0.72rem; }
+    .btn{ padding: 12px 12px; font-size: 0.82rem; }
+    .floating-bar{ gap: 5px; padding: 6px 8px; }
+    .floating-btn{ font-size: 0.68rem; padding: 8px 6px; }
+    .floating-btn svg{ width: 13px; height: 13px; }
+  }
+
+  /* Standard phones (341px - 479px, iPhone, Galaxy, Pixel) */
+  @media (min-width: 341px) and (max-width: 479px){
+    body{ padding: 3vh 8px 14vh; }
+    .stage{ width: 100%; max-width: 100%; }
+    .card{ padding: 32px 16px; border-radius: 16px; }
+  }
+
+  /* Tablets and intermediate (480px - 899px) */
+  @media (min-width: 480px) and (max-width: 899px){
+    body{ padding: 4vh 14px 10vh; }
+    .stage{ max-width: 580px; }
+    .card{ padding: 42px 32px; }
+    .collections-grid{ grid-template-columns: 1fr 1fr; }
+    .col-card.velvet{ grid-column: span 2; }
+    .cta-row{ flex-direction: row; }
+    .cta-row .btn{ flex: 1; }
+  }
+
+  /* Laptop & Desktop Luxury 2-Column Experience (>= 900px) */
+  @media (min-width: 900px){
+    body{ padding: 6vh 20px 8vh; }
+    .stage{ max-width: 980px; }
+    .card{
+      display: grid;
+      grid-template-columns: 390px 1fr;
+      column-gap: 40px;
+      row-gap: 0;
+      padding: 48px 42px;
+      text-align: left;
+    }
+    
+    /* Left Column: Brand mark, suits photo, actions & address */
+    .g-header{
+      grid-column: 1;
+      grid-row: 1;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+    .g-showcase{
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .g-actions{
+      grid-column: 1;
+      grid-row: 3;
+    }
+    .g-address{
+      grid-column: 1;
+      grid-row: 4;
+      text-align: center;
+    }
+    
+    /* Right Column: Heading announcement, collections & online banner */
+    .g-heading{
+      grid-column: 2;
+      grid-row: 1;
+      text-align: left;
+    }
+    .g-heading .rule{ display: none; }
+    .g-heading .about{ margin: 0 0 20px 0; max-width: 100%; }
+    .g-collections{
+      grid-column: 2;
+      grid-row: 2;
+    }
+    .collections-title{ justify-content: flex-start; }
+    .collections-title::before{ display: none; }
+    .collections-grid{ grid-template-columns: 1fr 1fr; }
+    .col-card.velvet{ grid-column: span 2; }
+    .g-online{
+      grid-column: 2;
+      grid-row: 3 / span 2;
+      margin-top: 6px;
+    }
+    .cta-row{ flex-direction: row; }
+    .cta-row .btn{ flex: 1; }
+    
+    .floating-bar{ display: none; } /* Hide floating bar on laptop */
   }
 
   @media (prefers-reduced-motion: reduce){
     *{ animation:none !important; transition:none !important; }
-    .g-header, .g-heading, .g-date, .g-details{ opacity:1; transform:none; }
+    .g-header, .g-heading, .g-showcase, .g-collections, .g-online, .g-actions, .g-address{ opacity:1; transform:none; }
     .card{ transform:none !important; }
   }
 </style>
@@ -450,13 +970,14 @@
     <p class="intro-hint">tap to continue</p>
   </div>
 
-  <div class="flash-opening" aria-hidden="true"><span>Opening Soon</span></div>
+  <div class="flash-opening" aria-hidden="true"><span>Now Open</span></div>
   <!-- END INTRO TIMELINE -->
 
   <div class="stage">
     <main class="card">
       <div class="sheen" aria-hidden="true"></div>
 
+      <!-- HEADER (BRAND IDENTITY) -->
       <div class="g-header">
         <div class="mark-wrap">
           <img class="mark" src="stuti-logo-crop.png" alt="STUTI Logo">
@@ -465,42 +986,223 @@
         <p class="tagline">Rooted in tradition, made for you</p>
       </div>
 
+      <!-- HEADING: NOW OPEN (STORE OPENED ON THE AUSPICIOUS DAY OF DIWALI) -->
       <div class="g-heading">
         <div class="rule" aria-hidden="true"><span></span></div>
-        <h1 class="status">Opening Soon</h1>
-        <p class="about">Unstitched fabric &amp; ready-to-wear ladies suits, near Jyoti Chowk, Jalandhar.</p>
+        
+        <div class="festive-badge">
+          <!-- Diya / festive icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c-.6 2.5-2.5 4.5-2.5 6.5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5C14.5 6.5 12.6 4.5 12 2z"/>
+            <path d="M4 14c0 3.9 3.6 7 8 7s8-3.1 8-7H4z"/>
+          </svg>
+          Opened on the Auspicious Day of Diwali · 8 Nov 2026
+        </div>
+
+        <h1 class="status">We Are Now Open</h1>
+        <p class="status-sub">In-Store &amp; Online Across India</p>
+        <p class="about">
+          Our store proudly opened its doors on the auspicious day of Diwali, <b>8th November 2026</b> near Jyoti Chowk, Jalandhar. We welcome you to experience our exclusive ethnic wear in person or order online!
+        </p>
       </div>
 
-      <div class="g-date" style="text-align:center;">
-        <div class="date-box">12 October <b>2026</b></div>
+      <!-- PHOTO SHOWCASE: IN-STORE SUITS ON DISPLAY (TAP TO EXPLORE ON REELS) -->
+      <div class="g-showcase">
+        <a class="showcase-frame" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer" title="Explore our latest suits on Instagram Reels">
+          <img class="showcase-img" src="stuti-suits.jpg" alt="STUTI Suits Collection on Display">
+          <div class="showcase-overlay">
+            <span class="showcase-badge">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              In-Store Showcase · Tap to Explore
+            </span>
+            <div class="showcase-content">
+              <h3 class="showcase-title">Handpicked Designer Suits</h3>
+              <p class="showcase-sub">Fresh arrivals on display · Tap to explore more on Instagram &rarr;</p>
+            </div>
+          </div>
+        </a>
       </div>
 
-      <div class="g-details">
-        <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%27d%20like%20to%20know%20more" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/><path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.7 1.6.75 1.7.05.1.1.25 0 .4-.1.15-.15.25-.3.4l-.4.45c-.15.15-.3.3-.15.55.15.25.7 1.2 1.5 1.95 1 1 1.9 1.3 2.15 1.45.25.15.4.1.55-.05l.6-.7c.2-.25.4-.2.65-.1l1.5.7c.25.1.4.15.45.25.05.15.05.75-.2 1.4-.25.65-1.4 1.25-1.95 1.3-.5.1-1.15.15-3.3-.7-2.7-1.1-4.4-3.85-4.55-4.05-.15-.2-1.1-1.45-1.1-2.75 0-1.3.7-1.95.9-2.2z"/></svg>
-            Message us on WhatsApp
+      <!-- 4-PART COLLECTION GRID + VELVET COMING SOON -->
+      <div class="collections-wrap g-collections">
+        <div class="collections-title">Our Collections</div>
+        <div class="collections-grid">
+
+          <!-- Simple & Elegant -->
+          <div class="col-card">
+            <div class="col-card-header">
+              <span class="col-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                Simple &amp; Elegant
+              </span>
+              <span class="col-card-tag">Daily Grace</span>
+            </div>
+            <p class="col-card-desc">Understated beauty, pure comfort fabrics, and subtle everyday styling.</p>
+          </div>
+
+          <!-- Semi-Formal -->
+          <div class="col-card">
+            <div class="col-card-header">
+              <span class="col-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                </svg>
+                Semi-Formal
+              </span>
+              <span class="col-card-tag">Versatile</span>
+            </div>
+            <p class="col-card-desc">Chic daytime gatherings, intimate events &amp; tasteful contemporary silhouettes.</p>
+          </div>
+
+          <!-- Formal Wear -->
+          <div class="col-card">
+            <div class="col-card-header">
+              <span class="col-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                </svg>
+                Formal Wear
+              </span>
+              <span class="col-card-tag">Poised</span>
+            </div>
+            <p class="col-card-desc">Graceful workwear, elegant luncheons &amp; sophisticated bespoke cuts.</p>
+          </div>
+
+          <!-- Party Wear -->
+          <div class="col-card">
+            <div class="col-card-header">
+              <span class="col-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
+                </svg>
+                Party Wear
+              </span>
+              <span class="col-card-tag">Festive</span>
+            </div>
+            <p class="col-card-desc">Intricate embroideries, rich silhouettes &amp; grand celebrations.</p>
+          </div>
+
+          <!-- Winter Velvet Collection -->
+          <div class="col-card velvet">
+            <div class="col-card-header">
+              <span class="col-card-title">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/>
+                </svg>
+                Winter Velvet Collection
+              </span>
+              <span class="badge-progress">Coming Soon</span>
+            </div>
+            <p class="col-card-desc">
+              Our exclusive winter velvet collection is coming soon! Bringing plush royal velvets, rich winter textures &amp; warm celebratory edits.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ONLINE ORDERS & INSTAGRAM REELS CALLOUT -->
+      <div class="online-banner g-online">
+        <div class="live-pill">
+          <span class="live-dot"></span> Now Active Online
+        </div>
+        <h3 class="online-title">
+          Follow <a href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
+        </h3>
+        <p class="online-text">
+          Explore our latest ethnic suits showcased through daily <b>Instagram Reels</b>. We are actively accepting online orders!
+        </p>
+        <div class="reels-callout">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+          <span>Suits showcased via Reels · DM or WhatsApp to buy</span>
+        </div>
+        <div class="order-tags">
+          <span class="order-tag">✓ WhatsApp Orders</span>
+          <span class="order-tag">✓ Instagram DMs</span>
+          <span class="order-tag">✓ Pan-India Delivery</span>
+        </div>
+      </div>
+
+      <!-- UNIFIED PRIMARY ACTION BUTTONS (GOOGLE MAPS HIGHLIGHTED) -->
+      <div class="cta g-actions">
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20reels%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
+            <!-- WhatsApp SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
+              <path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.7 1.6.75 1.7.05.1.1.25 0 .4-.1.15-.15.25-.3.4l-.4.45c-.15.15-.3.3-.15.55.15.25.7 1.2 1.5 1.95 1 1 1.9 1.3 2.15 1.45.25.15.4.1.55-.05l.6-.7c.2-.25.4-.2.65-.1l1.5.7c.25.1.4.15.45.25.05.15.05.75-.2 1.4-.25.65-1.4 1.25-1.95 1.3-.5.1-1.15.15-3.3-.7-2.7-1.1-4.4-3.85-4.55-4.05-.15-.2-1.1-1.45-1.1-2.75 0-1.3.7-1.95.9-2.2z"/>
+            </svg>
+            Order on WhatsApp
           </a>
+
           <a class="btn btn-secondary" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/></svg>
-            Follow on Instagram
+            <!-- Instagram SVG -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+            Watch Reels &amp; DM
           </a>
         </div>
 
-        <div class="divider-thin" aria-hidden="true"></div>
-
-        <address>
-          ES45, Ground Floor, Nakodar Road<br>
-          Near Jyoti Chowk — opposite Jyoti Mall &amp; Domino's<br>
-          Jalandhar, Punjab – 144001<br>
-          <a href="https://maps.app.goo.gl/j24kBvPZxT1pTGfy8" target="_blank" rel="noopener noreferrer" style="color: var(--gold-soft); border-bottom-color: var(--gold-line);">Get directions</a>
-          <br><br>
-          <a href="tel:+917696764505">+91 76967 64505</a> &nbsp;·&nbsp; <a href="tel:+919855460309">+91 98554 60309</a><br>
-          <a href="mailto:stutijalandhar@gmail.com">stutijalandhar@gmail.com</a>
-        </address>
+        <a class="btn btn-maps" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
+          <!-- Google Maps Pin SVG -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+          </svg>
+          Navigate on Google Maps
+        </a>
       </div>
+
+      <!-- STORE LOCATION & CONTACT INFO (SINGLE CLEAN ADDRESS) -->
+      <address class="g-address">
+        <div class="divider-thin" aria-hidden="true"></div>
+        <span class="addr-label">Store Location</span><br>
+        ES45, Ground Floor, Nakodar Road<br>
+        Near Jyoti Chowk — opposite Jyoti Mall &amp; Domino's<br>
+        Jalandhar, Punjab – 144001<br><br>
+        <a href="tel:+917696764505">+91 76967 64505</a><br>
+        <a href="mailto:stutijalandhar@gmail.com">Email us at stutijalandhar@gmail.com</a>
+      </address>
     </main>
   </div>
+
+  <!-- FLOATING QUICK-ACTION BAR (INSTANT TAP FOR MOBILE / SMARTPHONES) -->
+  <nav class="floating-bar" aria-label="Instant Mobile Actions">
+    <a class="floating-btn fb-wa" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
+        <path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.7 1.6.75 1.7.05.1.1.25 0 .4-.1.15-.15.25-.3.4l-.4.45c-.15.15-.3.3-.15.55.15.25.7 1.2 1.5 1.95 1 1 1.9 1.3 2.15 1.45.25.15.4.1.55-.05l.6-.7c.2-.25.4-.2.65-.1l1.5.7c.25.1.4.15.45.25.05.15.05.75-.2 1.4-.25.65-1.4 1.25-1.95 1.3-.5.1-1.15.15-3.3-.7-2.7-1.1-4.4-3.85-4.55-4.05-.15-.2-1.1-1.45-1.1-2.75 0-1.3.7-1.95.9-2.2z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+
+    <a class="floating-btn fb-insta" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>Reels / DM</span>
+    </a>
+
+    <a class="floating-btn fb-map" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+        <circle cx="12" cy="9" r="2.5"/>
+      </svg>
+      <span>Maps</span>
+    </a>
+  </nav>
 
 <script>
 (function(){
@@ -508,7 +1210,7 @@
 
   // scattered sparks
   var field = document.querySelector('.sparks');
-  var n = 25;
+  var n = 30;
   for(var i=0;i<n;i++){
     var s = document.createElement('div');
     s.className = 'spark';
@@ -535,9 +1237,9 @@
     at(1300, function(){ body.classList.add('depart','stage-a'); });
     at(2300, function(){ introEl.style.display = 'none'; });
     at(2550, function(){ body.classList.add('stage-b'); });
-    at(3300, function(){ body.classList.add('stage-c'); });
+    at(3250, function(){ body.classList.add('stage-c'); });
     at(3350, function(){ flashEl.style.display = 'none'; });
-    at(3700, function(){ body.classList.add('stage-d'); });
+    at(3650, function(){ body.classList.add('stage-d'); });
 
     function skip(){
       timers.forEach(clearTimeout);
@@ -574,7 +1276,7 @@
     if(e.clientX > r.left-60 && e.clientX < r.right+60 && e.clientY > r.top-60 && e.clientY < r.bottom+60){
       var px = (e.clientX - r.left)/r.width - 0.5;
       var py = (e.clientY - r.top)/r.height - 0.5;
-      card.style.transform = 'rotateY('+(px*8).toFixed(2)+'deg) rotateX('+(-py*8).toFixed(2)+'deg)';
+      card.style.transform = 'rotateY('+(px*6).toFixed(2)+'deg) rotateX('+(-py*6).toFixed(2)+'deg)';
     } else {
       card.style.transform = 'rotateY(0) rotateX(0)';
     }
