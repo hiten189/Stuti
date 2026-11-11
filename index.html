@@ -6,13 +6,13 @@
 <meta name="theme-color" content="#1f0207">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>STUTI — Exclusive Ladies Ethnic Wear | Now Open in Jalandhar</title>
-<meta name="description" content="STUTI is Now Open! Flagship store opened on the auspicious day of Diwali (8 Nov 2026) near Jyoti Chowk, Jalandhar. Specially handpicked unstitched fabrics and ready-to-wear ladies suits. Simple & elegant, semi-formal, formal & festive party wear. Winter velvet collection coming soon! Accepting online orders via WhatsApp & Instagram.">
+<title>STUTI — Elegant Readymade &amp; Unstitched Suits | Now Open in Jalandhar</title>
+<meta name="description" content="STUTI is Now Open! Flagship store opened on the auspicious day of Diwali (8 Nov 2026) near Jyoti Chowk, Jalandhar. Elegant unstitched fabrics and readymade suits. See our Instagram @stuti_jalandhar (100+ followers) for our collection, and review us on Google Maps!">
 <link rel="icon" href="stuti-logo-crop.png">
 
 <!-- Open Graph / Meta -->
-<meta property="og:title" content="STUTI — Exclusive Ladies Ethnic Wear | Now Open in Jalandhar">
-<meta property="og:description" content="Now Open in Jalandhar! Opened on the auspicious day of Diwali (8 Nov 2026). Specially chosen suits — simple, semi-formal, formal & festive party wear. Winter velvet edit coming soon! Visit our store or order online via WhatsApp & Instagram Reels!">
+<meta property="og:title" content="STUTI — Elegant Readymade &amp; Unstitched Suits | Now Open in Jalandhar">
+<meta property="og:description" content="Now Open in Jalandhar! Opened on the auspicious day of Diwali. Elegant readymade & unstitched suits. Visit our Instagram page (100+ followers) and find us on Google Maps!">
 <meta property="og:image" content="stuti-suits.jpg">
 <meta property="og:type" content="website">
 
@@ -25,7 +25,7 @@
   "@context": "https://schema.org",
   "@type": "ClothingStore",
   "name": "STUTI",
-  "description": "Exclusive specially handpicked unstitched and ready-to-wear ladies ethnic suits in Jalandhar. Simple & elegant, semi-formal, formal, and festive party wear. Store opened on the auspicious day of Diwali, 8 November 2026. Winter velvet collection coming soon.",
+  "description": "Elegant readymade and unstitched ladies suits in Jalandhar. Store opened on the auspicious day of Diwali, 8 November 2026. Explore our collection on Instagram @stuti_jalandhar and review us on Google Maps.",
   "email": "stutijalandhar@gmail.com",
   "telephone": "+91-76967-64505",
   "hasMap": "https://maps.app.goo.gl/ZurJmbqXFEqZykMXA",
@@ -471,7 +471,7 @@
   }
 
   /* =========================================================
-     COLLECTIONS SECTION
+     OUR COLLECTION (ELEGANT, READYMADE & UNSTITCHED SUITS)
   ========================================================== */
   .collections-wrap{
     margin-bottom:22px;
@@ -505,8 +505,8 @@
   .col-card{
     background:rgba(10, 1, 3, 0.52);
     border:1px solid rgba(220, 179, 67, 0.2);
-    border-radius:10px;
-    padding:13px 15px;
+    border-radius:12px;
+    padding:16px 18px;
     position:relative;
     transition:all 0.3s ease;
   }
@@ -520,19 +520,19 @@
     align-items:center;
     justify-content:space-between;
     gap:8px;
-    margin-bottom:4px;
+    margin-bottom:6px;
   }
   .col-card-title{
     font-family:var(--serif);
-    font-size:1.1rem;
+    font-size:1.15rem;
     color:var(--ivory);
-    font-weight:500;
+    font-weight:600;
     letter-spacing:0.02em;
     display:flex;
     align-items:center;
-    gap:7px;
+    gap:8px;
   }
-  .col-card-title svg{ width:15px; height:15px; color:var(--gold); flex-shrink:0; }
+  .col-card-title svg{ width:16px; height:16px; color:var(--gold); flex-shrink:0; }
   .col-card-tag{
     font-family:var(--sans);
     font-size:0.65rem;
@@ -541,50 +541,62 @@
     color:var(--gold-soft);
     background:rgba(220, 179, 67, 0.1);
     border:1px solid rgba(220, 179, 67, 0.25);
-    padding:2px 7px;
+    padding:3px 8px;
     border-radius:4px;
     white-space:nowrap;
   }
   .col-card-desc{
-    font-size:0.79rem;
+    font-size:0.82rem;
     color:var(--ivory-dim);
-    line-height:1.45;
+    line-height:1.5;
   }
 
-  /* Velvet / Winter Collection Spotlight */
-  .col-card.velvet{
-    background:linear-gradient(135deg, rgba(62, 10, 22, 0.75) 0%, rgba(20, 2, 5, 0.9) 100%);
-    border:1px solid rgba(220, 179, 67, 0.45);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-    position:relative;
-    overflow:hidden;
+  /* Instagram Showcase Link Card */
+  .col-insta-card{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:linear-gradient(135deg, rgba(220, 179, 67, 0.14) 0%, rgba(56, 10, 19, 0.65) 100%);
+    border:1.5px solid rgba(220, 179, 67, 0.4);
+    border-radius:12px;
+    padding:14px 18px;
+    text-decoration:none;
+    color:var(--ivory);
+    margin-top:10px;
+    transition:all 0.35s ease;
+    box-shadow:0 6px 20px rgba(0,0,0,0.3);
   }
-  .col-card.velvet::before{
-    content:'';
-    position:absolute; inset:0;
-    background:radial-gradient(circle at top right, rgba(220, 179, 67, 0.12), transparent 70%);
-    pointer-events:none;
-  }
-  .col-card.velvet:hover{
+  .col-insta-card:hover{
     border-color:var(--gold);
-    box-shadow:0 8px 25px rgba(220, 179, 67, 0.25);
+    background:linear-gradient(135deg, rgba(220, 179, 67, 0.22) 0%, rgba(68, 12, 24, 0.8) 100%);
+    transform:translateY(-2px);
+    box-shadow:0 8px 25px rgba(220, 179, 67, 0.22);
   }
-  .badge-progress{
-    font-family:var(--sans);
-    font-size:0.64rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    background:linear-gradient(135deg, #e6b839 0%, #b3851b 100%);
-    color:#120104;
-    padding:3px 8px;
-    border-radius:4px;
+  .col-insta-icon{
+    width:38px; height:38px;
+    border-radius:10px;
+    background:linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    display:flex; align-items:center; justify-content:center;
+    color:#fff;
+    flex-shrink:0;
+    box-shadow:0 2px 10px rgba(225, 48, 108, 0.4);
+  }
+  .col-insta-icon svg{ width:20px; height:20px; }
+  .col-insta-text h4{
+    font-family:var(--serif);
+    font-size:1.12rem;
+    color:var(--ivory);
     font-weight:600;
-    white-space:nowrap;
-    box-shadow:0 2px 6px rgba(0,0,0,0.3);
+    margin-bottom:2px;
+  }
+  .col-insta-text p{
+    font-size:0.79rem;
+    color:var(--gold-soft);
+    line-height:1.35;
   }
 
   /* =========================================================
-     ONLINE ORDERS & INSTAGRAM REELS BANNER
+     INSTAGRAM PAGE & COMMUNITY CALLOUT (100+ FOLLOWERS)
   ========================================================== */
   .online-banner{
     position:relative;
@@ -634,7 +646,7 @@
   }
   .online-title{
     font-family:var(--serif);
-    font-size:1.22rem;
+    font-size:1.25rem;
     font-weight:600;
     color:var(--ivory);
     margin-bottom:5px;
@@ -656,18 +668,7 @@
     line-height:1.55;
     margin-bottom:12px;
   }
-  .reels-callout{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:8px;
-    color:var(--gold-soft);
-    font-size:0.8rem;
-    font-weight:500;
-    margin-bottom:12px;
-    letter-spacing:0.02em;
-  }
-  .reels-callout svg{ width:15px; height:15px; flex-shrink:0; color:var(--gold); }
+  .online-text b{ color:var(--gold-soft); }
   .order-tags{
     display:flex;
     flex-wrap:wrap;
@@ -682,6 +683,34 @@
     border-radius:20px;
     color:var(--gold-soft);
     letter-spacing:0.02em;
+  }
+
+  /* =========================================================
+     GOOGLE REVIEWS & RATING PROMPT
+  ========================================================== */
+  .google-review-card{
+    background:linear-gradient(135deg, rgba(31, 2, 7, 0.75) 0%, rgba(56, 10, 19, 0.6) 100%);
+    border:1.5px solid rgba(220, 179, 67, 0.35);
+    border-radius:12px;
+    padding:16px 16px;
+    margin-bottom:18px;
+    text-align:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.3);
+  }
+  .review-stars{
+    color:#f59e0b;
+    font-size:1.15rem;
+    letter-spacing:3px;
+    margin-bottom:5px;
+    text-shadow:0 0 10px rgba(245, 158, 11, 0.5);
+  }
+  .review-prompt{
+    font-size:0.82rem;
+    color:var(--ivory-dim);
+    line-height:1.45;
+  }
+  .review-prompt b{
+    color:var(--gold-soft);
   }
 
   /* =========================================================
@@ -724,7 +753,7 @@
   }
   .btn-primary:hover::after { left: 200%; }
   
-  /* Secondary Instagram */
+  /* Secondary Instagram Page */
   .btn-secondary{ 
     background:rgba(255,255,255,0.04); 
     color:var(--gold-soft); 
@@ -737,7 +766,7 @@
     transform: translateY(-2px);
   }
 
-  /* Single Highlighted Google Maps Action */
+  /* Highlighted Google Maps & Review Action */
   .btn-maps{
     background: linear-gradient(135deg, rgba(220, 179, 67, 0.22) 0%, rgba(65, 12, 23, 0.85) 100%);
     color: var(--gold-bright);
@@ -882,7 +911,6 @@
     .stage{ max-width: 580px; }
     .card{ padding: 42px 32px; }
     .collections-grid{ grid-template-columns: 1fr 1fr; }
-    .col-card.velvet{ grid-column: span 2; }
     .cta-row{ flex-direction: row; }
     .cta-row .btn{ flex: 1; }
   }
@@ -936,7 +964,6 @@
     .collections-title{ justify-content: flex-start; }
     .collections-title::before{ display: none; }
     .collections-grid{ grid-template-columns: 1fr 1fr; }
-    .col-card.velvet{ grid-column: span 2; }
     .g-online{
       grid-column: 2;
       grid-row: 3 / span 2;
@@ -1002,13 +1029,13 @@
         <h1 class="status">We Are Now Open</h1>
         <p class="status-sub">In-Store &amp; Online Across India</p>
         <p class="about">
-          Our store proudly opened its doors on the auspicious day of Diwali, <b>8th November 2026</b> near Jyoti Chowk, Jalandhar. We welcome you to experience our exclusive ethnic wear in person or order online!
+          Our store proudly opened its doors on the auspicious day of Diwali, <b>8th November 2026</b> near Jyoti Chowk, Jalandhar. We bring you elegant readymade and unstitched suits. Experience our collection at our store or explore our Instagram page!
         </p>
       </div>
 
-      <!-- PHOTO SHOWCASE: IN-STORE SUITS ON DISPLAY (TAP TO EXPLORE ON REELS) -->
+      <!-- PHOTO SHOWCASE: IN-STORE SUITS ON DISPLAY (TAP TO EXPLORE INSTAGRAM) -->
       <div class="g-showcase">
-        <a class="showcase-frame" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer" title="Explore our latest suits on Instagram Reels">
+        <a class="showcase-frame" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer" title="See our Instagram for our collection">
           <img class="showcase-img" src="stuti-suits.jpg" alt="STUTI Suits Collection on Display">
           <div class="showcase-overlay">
             <span class="showcase-badge">
@@ -1019,121 +1046,95 @@
             </span>
             <div class="showcase-content">
               <h3 class="showcase-title">Handpicked Designer Suits</h3>
-              <p class="showcase-sub">Fresh arrivals on display · Tap to explore more on Instagram &rarr;</p>
+              <p class="showcase-sub">Fresh arrivals on display · See our Instagram for our collection &rarr;</p>
             </div>
           </div>
         </a>
       </div>
 
-      <!-- 4-PART COLLECTION GRID + VELVET COMING SOON -->
+      <!-- OUR COLLECTION (ELEGANT, READYMADE & UNSTITCHED SUITS) -->
       <div class="collections-wrap g-collections">
-        <div class="collections-title">Our Collections</div>
+        <div class="collections-title">Our Collection</div>
         <div class="collections-grid">
 
-          <!-- Simple & Elegant -->
+          <!-- Unstitched Suits -->
           <div class="col-card">
             <div class="col-card-header">
               <span class="col-card-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                 </svg>
-                Simple &amp; Elegant
+                Unstitched Suits
               </span>
-              <span class="col-card-tag">Daily Grace</span>
+              <span class="col-card-tag">Pure Fabrics</span>
             </div>
-            <p class="col-card-desc">Understated beauty, pure comfort fabrics, and subtle everyday styling.</p>
+            <p class="col-card-desc">Bespoke fabrics, delicate embroideries &amp; traditional lengths curated for your personal touch.</p>
           </div>
 
-          <!-- Semi-Formal -->
-          <div class="col-card">
-            <div class="col-card-header">
-              <span class="col-card-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-                </svg>
-                Semi-Formal
-              </span>
-              <span class="col-card-tag">Versatile</span>
-            </div>
-            <p class="col-card-desc">Chic daytime gatherings, intimate events &amp; tasteful contemporary silhouettes.</p>
-          </div>
-
-          <!-- Formal Wear -->
-          <div class="col-card">
-            <div class="col-card-header">
-              <span class="col-card-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                </svg>
-                Formal Wear
-              </span>
-              <span class="col-card-tag">Poised</span>
-            </div>
-            <p class="col-card-desc">Graceful workwear, elegant luncheons &amp; sophisticated bespoke cuts.</p>
-          </div>
-
-          <!-- Party Wear -->
+          <!-- Readymade Suits -->
           <div class="col-card">
             <div class="col-card-header">
               <span class="col-card-title">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
                   <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
                 </svg>
-                Party Wear
+                Readymade Suits
               </span>
-              <span class="col-card-tag">Festive</span>
+              <span class="col-card-tag">Tailored Grace</span>
             </div>
-            <p class="col-card-desc">Intricate embroideries, rich silhouettes &amp; grand celebrations.</p>
-          </div>
-
-          <!-- Winter Velvet Collection -->
-          <div class="col-card velvet">
-            <div class="col-card-header">
-              <span class="col-card-title">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07l14.14-14.14"/>
-                </svg>
-                Winter Velvet Collection
-              </span>
-              <span class="badge-progress">Coming Soon</span>
-            </div>
-            <p class="col-card-desc">
-              Our exclusive winter velvet collection is coming soon! Bringing plush royal velvets, rich winter textures &amp; warm celebratory edits.
-            </p>
+            <p class="col-card-desc">Exquisitely tailored ethnic wear &amp; elegant silhouettes ready to wear for every occasion.</p>
           </div>
 
         </div>
+
+        <!-- See Our Instagram for Our Collection Card -->
+        <a class="col-insta-card" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">
+          <div class="col-insta-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="col-insta-text">
+            <h4>See Our Instagram for Our Collection</h4>
+            <p>Explore all our latest designs, fresh arrivals &amp; daily posts on @stuti_jalandhar &rarr;</p>
+          </div>
+        </a>
       </div>
 
-      <!-- ONLINE ORDERS & INSTAGRAM REELS CALLOUT -->
+      <!-- INSTAGRAM COMMUNITY & ONLINE ORDERS (100+ FOLLOWERS) -->
       <div class="online-banner g-online">
         <div class="live-pill">
-          <span class="live-dot"></span> Now Active Online
+          <span class="live-dot"></span> Active on Instagram
         </div>
         <h3 class="online-title">
-          Follow <a href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
+          Visit Our Instagram Page: <a href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
         </h3>
         <p class="online-text">
-          Explore our latest ethnic suits showcased through daily <b>Instagram Reels</b>. We are actively accepting online orders!
+          We showcase our suits through posts and reels! Join our growing community of <b>100+ followers</b>. We are actively accepting online orders via Instagram DMs and WhatsApp.
         </p>
-        <div class="reels-callout">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3"/>
-          </svg>
-          <span>Suits showcased via Reels · DM or WhatsApp to buy</span>
-        </div>
         <div class="order-tags">
+          <span class="order-tag">✓ 100+ Followers</span>
+          <span class="order-tag">✓ Latest Posts &amp; Reels</span>
           <span class="order-tag">✓ WhatsApp Orders</span>
-          <span class="order-tag">✓ Instagram DMs</span>
           <span class="order-tag">✓ Pan-India Delivery</span>
         </div>
       </div>
 
-      <!-- UNIFIED PRIMARY ACTION BUTTONS (GOOGLE MAPS HIGHLIGHTED) -->
+      <!-- UNIFIED PRIMARY ACTION BUTTONS (GOOGLE MAPS HIGHLIGHTED & REVIEW PROMPT) -->
       <div class="cta g-actions">
+        
+        <!-- Google Reviews & Rating Card -->
+        <div class="google-review-card">
+          <div class="review-stars" aria-label="5 Star Rating">★★★★★</div>
+          <p class="review-prompt">
+            Visited our store or ordered online? <b>Please give us a review &amp; rating on Google Maps!</b>
+          </p>
+        </div>
+
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20reels%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
+          <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
             <!-- WhatsApp SVG -->
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
@@ -1149,7 +1150,7 @@
               <circle cx="12" cy="12" r="4"/>
               <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
             </svg>
-            Watch Reels &amp; DM
+            Visit Instagram Page
           </a>
         </div>
 
@@ -1159,7 +1160,7 @@
             <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
             <circle cx="12" cy="9" r="2.5"/>
           </svg>
-          Navigate on Google Maps
+          Navigate &amp; Rate Us on Google Maps
         </a>
       </div>
 
@@ -1192,7 +1193,7 @@
         <circle cx="12" cy="12" r="4"/>
         <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
       </svg>
-      <span>Reels / DM</span>
+      <span>Instagram</span>
     </a>
 
     <a class="floating-btn fb-map" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
