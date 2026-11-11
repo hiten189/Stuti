@@ -8,7 +8,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>STUTI — Elegant Readymade &amp; Unstitched Suits | Now Open in Jalandhar</title>
 <meta name="description" content="STUTI — Elegant unstitched fabrics and readymade suits in Jalandhar. Flagship showroom opened on the auspicious day of Diwali (8 Nov 2026) near Jyoti Chowk. Explore our latest arrivals on Instagram @stuti_jalandhar, order via WhatsApp, and review us on Google Maps!">
-<link rel="icon" href="stuti-logo-crop.png">
+<link rel="icon" href="stuti-logo-transparent.png">
 
 <!-- Open Graph / Meta -->
 <meta property="og:title" content="STUTI — Elegant Readymade &amp; Unstitched Suits | Now Open in Jalandhar">
@@ -86,7 +86,7 @@
     overflow-y:auto;
   }
 
-  /* Luxurious subtle silk grain overlay */
+  /* Luxurious silk grain overlay */
   body::before{
     content:'';
     position:fixed; inset:0;
@@ -151,7 +151,7 @@
   }
   .intro-mark-wrap{
     position: relative;
-    width:min(40vw, 150px);
+    width:min(38vw, 140px);
     margin-bottom:12px;
     z-index: 1;
   }
@@ -167,8 +167,6 @@
   .intro-mark{
     width:100%; display:block;
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
-    -webkit-mask-image:radial-gradient(ellipse 82% 85% at 50% 50%, #000 66%, transparent 100%);
-    mask-image:radial-gradient(ellipse 82% 85% at 50% 50%, #000 66%, transparent 100%);
   }
   .intro-word{
     font-family:var(--serif); font-weight:500;
@@ -200,7 +198,7 @@
   }
 
   /* =========================================================
-     STAGE & CARD ARCHITECTURE (DECLUTTERED LUXURY)
+     STAGE & CARD ARCHITECTURE (PERFECTLY BALANCED LUXURY)
   ========================================================== */
   .stage{
     position:relative;
@@ -214,7 +212,7 @@
   .card{
     position:relative;
     padding:34px 20px;
-    background: rgba(25, 3, 7, 0.65);
+    background: rgba(25, 3, 7, 0.68);
     backdrop-filter: blur(28px) saturate(190%);
     -webkit-backdrop-filter: blur(28px) saturate(190%);
     border: 1px solid rgba(220, 179, 67, 0.25);
@@ -230,34 +228,34 @@
     transform: translateY(0);
   }
 
-  /* Ambient cursor radial glow (ultra-smooth, no text jitter) */
+  /* Ambient cursor radial glow (ultra-smooth, zero text jitter) */
   .sheen{
     position:absolute; inset:0;
     border-radius: 20px;
     pointer-events:none;
-    background:radial-gradient(circle 380px at var(--mx) var(--my), rgba(220, 179, 67, 0.12), transparent 70%);
+    background:radial-gradient(circle 400px at var(--mx) var(--my), rgba(220, 179, 67, 0.12), transparent 70%);
     mix-blend-mode:screen;
     transition: background 0.1s ease-out;
   }
 
   /* =========================================================
-     BRAND HEADER & TYPOGRAPHY
+     GRAND BRAND HEADER (MAJESTIC CENTERED CREST)
   ========================================================== */
-  .brand-header{
+  .grand-header{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
   .mark-wrap{
     position:relative;
-    width:125px;
-    margin:0 auto 8px;
+    width:115px;
+    margin:0 auto 6px;
   }
   .mark-wrap::before{
     content:'';
     position:absolute;
     inset:-25%;
-    background:radial-gradient(circle, rgba(220, 179, 67, 0.24) 0%, transparent 70%);
-    filter:blur(15px);
+    background:radial-gradient(circle, rgba(220, 179, 67, 0.28) 0%, transparent 70%);
+    filter:blur(16px);
     animation: pulseLogo 4s ease-in-out infinite alternate;
     z-index:0;
   }
@@ -270,15 +268,15 @@
     z-index:1;
     width:100%;
     display:block;
-    filter: drop-shadow(0 10px 18px rgba(0,0,0,0.6));
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6));
     transition: transform .4s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .mark-wrap:hover .mark{ transform:scale(1.03); }
+  .mark-wrap:hover .mark{ transform:scale(1.04); }
 
   .brand-text {
     font-family: var(--serif);
     font-weight: 500;
-    font-size: clamp(2.4rem, 7.5vw, 3rem);
+    font-size: clamp(2.4rem, 7.5vw, 3.2rem);
     letter-spacing: 0.22em;
     margin-right: -0.22em;
     margin-bottom: 2px;
@@ -292,37 +290,13 @@
     font-family:var(--serif);
     font-style:italic;
     font-weight:400;
-    font-size:clamp(1.02rem, 3.4vw, 1.18rem);
+    font-size:clamp(1.02rem, 3.4vw, 1.2rem);
     color:var(--gold-soft);
     letter-spacing:0.04em;
-    margin-bottom:14px;
+    margin-bottom:12px;
     opacity: 0.95;
   }
 
-  .rule{ 
-    display:flex; 
-    align-items:center; 
-    gap:16px; 
-    margin:0 auto 20px;
-    max-width: 280px;
-  }
-  .rule::before,.rule::after{ 
-    content:''; flex:1; height:1px; 
-    background:linear-gradient(90deg, transparent, var(--gold-line), transparent); 
-  }
-  .rule span{
-    width:6px; height:6px; border:1px solid var(--gold);
-    transform:rotate(45deg); flex-shrink:0;
-    box-shadow: 0 0 8px var(--gold-glow);
-  }
-
-  /* =========================================================
-     DIWALI OPENING PROCLAMATION & NARRATIVE
-  ========================================================== */
-  .hero-proclamation{
-    text-align: center;
-    margin-bottom: 24px;
-  }
   .festive-badge{
     display:inline-flex;
     align-items:center;
@@ -336,54 +310,42 @@
     font-weight:500;
     letter-spacing:0.12em;
     text-transform:uppercase;
-    margin-bottom:12px;
+    margin-bottom:18px;
     box-shadow:0 0 16px rgba(220, 179, 67, 0.2);
   }
   .festive-badge svg{ width:15px; height:15px; color:var(--gold); flex-shrink:0; }
 
-  .status{
-    font-family:var(--serif);
-    font-weight:600;
-    font-size:clamp(2.2rem, 7vw, 3rem);
-    line-height:1.15;
-    background:linear-gradient(110deg, var(--gold-soft) 10%, #fff7e6 40%, var(--gold) 70%, var(--gold-soft) 100%);
-    background-size:200% auto;
-    -webkit-background-clip:text; background-clip:text;
-    -webkit-text-fill-color:transparent;
-    animation: shimmerGold 6s linear infinite;
-    margin-bottom:6px;
-    letter-spacing: 0.02em;
-  }
-  @keyframes shimmerGold{ to{ background-position:200% center; } }
-
-  .status-sub{
-    font-family:var(--sans);
-    font-size:0.78rem;
-    font-weight:500;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--gold);
-    margin-bottom:12px;
-  }
-
-  .about-story{
-    font-size:0.92rem; 
-    font-weight:300;
-    color:var(--ivory-dim); 
-    line-height:1.68;
-    max-width:480px; 
+  .rule{ 
+    display:flex; 
+    align-items:center; 
+    gap:16px; 
     margin:0 auto;
+    max-width: 320px;
   }
-  .about-story b{ 
-    color:var(--gold-soft); 
-    font-weight:500; 
+  .rule::before,.rule::after{ 
+    content:''; flex:1; height:1px; 
+    background:linear-gradient(90deg, transparent, var(--gold-line), transparent); 
+  }
+  .rule span{
+    width:6px; height:6px; border:1px solid var(--gold);
+    transform:rotate(45deg); flex-shrink:0;
+    box-shadow: 0 0 8px var(--gold-glow);
   }
 
   /* =========================================================
-     IN-STORE SUITS PHOTO SHOWCASE (EDITORIAL LUXURY)
+     EDITORIAL BODY (FLEXIBLE 2-COLUMN LAYOUT)
   ========================================================== */
-  .visual-wrapper{
-    margin-bottom: 24px;
+  .editorial-body{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  /* =========================================================
+     LEFT COLUMN: SUITS PHOTO SHOWCASE
+  ========================================================== */
+  .col-visual{
+    width: 100%;
   }
   .showcase-frame {
     display: block;
@@ -405,7 +367,7 @@
   .showcase-img {
     width: 100%;
     height: auto;
-    max-height: 420px;
+    max-height: 440px;
     object-fit: cover;
     object-position: center 25%;
     display: block;
@@ -417,7 +379,7 @@
   .showcase-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(10,1,3,0.2) 45%, rgba(10,1,3,0.94) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(10,1,3,0.2) 45%, rgba(10,1,3,0.94) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -461,51 +423,92 @@
     text-shadow: 0 2px 6px rgba(0,0,0,0.9);
   }
 
-  /* Desktop quote block under image */
-  .visual-quote{
-    display: none;
-    margin-top: 16px;
-    padding: 14px 18px;
+  .visual-caption{
+    margin-top: 14px;
+    padding: 14px 16px;
     border-radius: 12px;
-    background: rgba(15, 2, 5, 0.55);
+    background: rgba(15, 2, 5, 0.6);
     border: 1px solid var(--gold-line);
     text-align: center;
   }
-  .quote-text{
+  .caption-lead{
     font-family: var(--serif);
-    font-style: italic;
     font-size: 1.05rem;
     color: var(--gold-soft);
-    margin-bottom: 4px;
+    font-weight: 500;
+    margin-bottom: 3px;
   }
-  .quote-sub{
-    font-size: 0.74rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+  .caption-sub{
+    font-size: 0.78rem;
     color: var(--ivory-dim);
+    line-height: 1.4;
   }
 
   /* =========================================================
-     OUR COLLECTION (ELEGANT, READYMADE & UNSTITCHED SUITS)
+     RIGHT COLUMN: PROCLAMATION, COLLECTIONS & ACTIONS
   ========================================================== */
-  .section-heading{
-    text-align:center;
+  .col-content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .proclamation-wrap{
+    text-align: left;
+  }
+  .status{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(2rem, 6.5vw, 2.65rem);
+    line-height:1.15;
+    background:linear-gradient(110deg, var(--gold-soft) 10%, #fff7e6 40%, var(--gold) 70%, var(--gold-soft) 100%);
+    background-size:200% auto;
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation: shimmerGold 6s linear infinite;
+    margin-bottom:4px;
+    letter-spacing: 0.02em;
+  }
+  @keyframes shimmerGold{ to{ background-position:200% center; } }
+
+  .status-sub{
+    font-family:var(--sans);
+    font-size:0.78rem;
+    font-weight:500;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:10px;
+  }
+
+  .about-story{
+    font-size:0.91rem; 
+    font-weight:300;
+    color:var(--ivory-dim); 
+    line-height:1.68;
+  }
+  .about-story b{ 
+    color:var(--gold-soft); 
+    font-weight:500; 
+  }
+
+  /* Collection Cards */
+  .section-label{
     font-family:var(--sans);
     font-size:0.75rem;
-    letter-spacing:0.2em;
+    letter-spacing:0.18em;
     text-transform:uppercase;
     color:var(--gold);
     font-weight:600;
-    margin-bottom:14px;
+    margin-bottom:10px;
     display:flex;
     align-items:center;
-    justify-content:center;
-    gap:12px;
+    gap:10px;
   }
-  .section-heading::before, .section-heading::after{
+  .section-label::after{
     content:'';
+    flex: 1;
     height:1px;
-    width:28px;
     background:var(--gold-line);
   }
 
@@ -513,13 +516,12 @@
     display:grid;
     grid-template-columns:1fr;
     gap:10px;
-    margin-bottom: 18px;
   }
   .col-card{
     background:rgba(12, 1, 4, 0.6);
     border:1px solid rgba(220, 179, 67, 0.22);
-    border-radius:14px;
-    padding:16px 18px;
+    border-radius:12px;
+    padding:14px 16px;
     text-align: left;
     transition:all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -534,11 +536,11 @@
     align-items:center;
     justify-content:space-between;
     gap:8px;
-    margin-bottom:6px;
+    margin-bottom:5px;
   }
   .col-card-title{
     font-family:var(--serif);
-    font-size:1.18rem;
+    font-size:1.15rem;
     color:var(--ivory);
     font-weight:600;
     letter-spacing:0.02em;
@@ -560,22 +562,19 @@
     white-space:nowrap;
   }
   .col-card-desc{
-    font-size:0.84rem;
+    font-size:0.83rem;
     color:var(--ivory-dim);
-    line-height:1.55;
+    line-height:1.5;
     font-weight: 300;
   }
 
-  /* =========================================================
-     COMPELING INSTAGRAM SHOWCASE & DAILY NEW ARRIVALS
-  ========================================================== */
+  /* Instagram Daily Fresh Arrivals */
   .insta-banner{
     position:relative;
-    background:linear-gradient(135deg, rgba(220, 179, 67, 0.15) 0%, rgba(54, 8, 17, 0.7) 100%);
+    background:linear-gradient(135deg, rgba(220, 179, 67, 0.14) 0%, rgba(54, 8, 17, 0.7) 100%);
     border:1.5px solid rgba(220, 179, 67, 0.4);
-    border-radius:16px;
-    padding:20px 18px;
-    margin-bottom:20px;
+    border-radius:14px;
+    padding:16px 16px;
     text-align:center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(220, 179, 67, 0.12);
     overflow:hidden;
@@ -592,14 +591,14 @@
     gap:7px;
     background:rgba(10, 1, 3, 0.85);
     border:1px solid rgba(220, 179, 67, 0.4);
-    padding:4px 13px;
+    padding:4px 12px;
     border-radius:20px;
-    font-size:0.7rem;
+    font-size:0.69rem;
     letter-spacing:0.12em;
     color:var(--gold-soft);
     font-weight:500;
     text-transform:uppercase;
-    margin-bottom:10px;
+    margin-bottom:8px;
   }
   .live-dot{
     width:7px; height:7px;
@@ -616,10 +615,10 @@
 
   .insta-title{
     font-family:var(--serif);
-    font-size:1.35rem;
+    font-size:1.24rem;
     font-weight:600;
     color:var(--ivory);
-    margin-bottom:6px;
+    margin-bottom:5px;
     letter-spacing: 0.02em;
   }
   .insta-handle{
@@ -633,13 +632,10 @@
     border-bottom-color:#fff;
   }
   .insta-text{
-    font-size:0.86rem;
+    font-size:0.84rem;
     color:var(--ivory-dim);
-    line-height:1.6;
-    margin-bottom:14px;
-    max-width: 440px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height:1.55;
+    margin-bottom:12px;
   }
   .insta-text b{ color:var(--gold-soft); }
 
@@ -647,12 +643,11 @@
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:8px;
-    margin-bottom:14px;
+    gap:7px;
   }
   .perk-tag{
-    font-size:0.72rem;
-    padding:4px 11px;
+    font-size:0.71rem;
+    padding:4px 10px;
     background:rgba(220, 179, 67, 0.09);
     border:1px solid rgba(220, 179, 67, 0.25);
     border-radius:20px;
@@ -660,67 +655,61 @@
     letter-spacing:0.02em;
   }
 
-  /* =========================================================
-     GOOGLE 5-STAR REVIEWS & RATING ASK
-  ========================================================== */
+  /* Google 5-Star Reviews Card */
   .review-card{
     background:linear-gradient(135deg, rgba(20, 2, 5, 0.75) 0%, rgba(48, 7, 16, 0.65) 100%);
     border:1.5px solid rgba(220, 179, 67, 0.35);
-    border-radius:14px;
-    padding:16px 18px;
-    margin-bottom:18px;
+    border-radius:12px;
+    padding:14px 16px;
     text-align:center;
     box-shadow:0 6px 20px rgba(0,0,0,0.3);
   }
   .review-stars{
     color:#f59e0b;
-    font-size:1.25rem;
-    letter-spacing:4px;
-    margin-bottom:4px;
-    text-shadow:0 0 12px rgba(245, 158, 11, 0.6);
+    font-size:1.2rem;
+    letter-spacing:3px;
+    margin-bottom:3px;
+    text-shadow:0 0 10px rgba(245, 158, 11, 0.6);
   }
   .review-title{
     font-family:var(--serif);
-    font-size:1.15rem;
+    font-size:1.1rem;
     color:var(--ivory);
     font-weight:600;
-    margin-bottom:4px;
+    margin-bottom:3px;
   }
   .review-prompt{
-    font-size:0.83rem;
+    font-size:0.82rem;
     color:var(--ivory-dim);
-    line-height:1.5;
+    line-height:1.45;
   }
   .review-prompt b{
     color:var(--gold-soft);
   }
 
-  /* =========================================================
-     PRIMARY CTA ACTION BUTTONS
-  ========================================================== */
+  /* Action Buttons */
   .actions-group{ 
     display:flex; 
     flex-direction:column; 
-    gap:11px; 
-    margin-bottom:22px; 
+    gap:10px; 
   }
   .btn-row{ 
     display:flex; 
     flex-direction:column; 
-    gap:11px; 
+    gap:10px; 
   }
 
   .btn{
     position:relative;
     overflow:hidden;
     display:flex; align-items:center; justify-content:center; gap:10px;
-    padding:15px 18px;
+    padding:14px 18px;
     border-radius: 10px;
-    font-family:var(--sans); font-size:0.92rem; font-weight:500; letter-spacing: 0.03em;
+    font-family:var(--sans); font-size:0.91rem; font-weight:500; letter-spacing: 0.03em;
     text-decoration:none;
     transition:all .35s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .btn svg{ width:19px; height:19px; flex-shrink:0; transition:transform .3s ease; }
+  .btn svg{ width:18px; height:18px; flex-shrink:0; transition:transform .3s ease; }
   
   /* Primary WhatsApp */
   .btn-primary{ 
@@ -758,7 +747,7 @@
     transform: translateY(-2px);
   }
 
-  /* Highlighted Google Maps & Review Action */
+  /* Highlighted Google Maps Action */
   .btn-maps{
     background: linear-gradient(135deg, rgba(220, 179, 67, 0.24) 0%, rgba(68, 11, 23, 0.88) 100%);
     color: var(--gold-bright);
@@ -774,16 +763,14 @@
     transform: translateY(-2px);
   }
 
-  /* =========================================================
-     SHOWROOM ADDRESS & CONTACT INFO
-  ========================================================== */
+  /* Showroom Address */
   address{
     font-style:normal; 
-    font-size:0.86rem; 
+    font-size:0.85rem; 
     font-weight:300;
     color:var(--ivory-dim); 
     line-height:1.75;
-    text-align: center;
+    text-align: left;
   }
   .addr-label{
     font-family:var(--sans);
@@ -805,7 +792,7 @@
     border-bottom-color: var(--gold-soft);
   }
 
-  .divider-thin{ width:48px; height:1px; background:var(--gold-line); margin:16px auto; }
+  .divider-thin{ width:44px; height:1px; background:var(--gold-line); margin:14px 0; }
 
   /* =========================================================
      FLOATING QUICK-ACTION BAR (MOBILE & SMARTPHONES)
@@ -881,10 +868,10 @@
   @media (max-width: 340px){
     body{ padding: 2vh 6px 14vh; }
     .card{ padding: 22px 10px; border-radius: 14px; }
-    .mark-wrap{ width: 100px; }
+    .mark-wrap{ width: 95px; }
     .brand-text{ font-size: 2.1rem; letter-spacing: 0.14em; }
     .tagline{ font-size: 0.92rem; }
-    .status{ font-size: 1.85rem; }
+    .status{ font-size: 1.8rem; }
     .status-sub{ font-size: 0.7rem; }
     .about-story{ font-size: 0.82rem; }
     .showcase-img{ max-height: 280px; }
@@ -900,17 +887,27 @@
   @media (min-width: 341px) and (max-width: 479px){
     body{ padding: 3vh 8px 14vh; }
     .stage{ width: 100%; max-width: 100%; }
-    .card{ padding: 32px 16px; border-radius: 16px; }
+    .card{ padding: 30px 16px; border-radius: 16px; }
+    address{ text-align: center; }
+    .divider-thin{ margin: 14px auto; }
+    .proclamation-wrap{ text-align: center; }
+    .section-label{ justify-content: center; }
+    .section-label::after{ display: none; }
   }
 
   /* Tablets and intermediate (480px - 899px) */
   @media (min-width: 480px) and (max-width: 899px){
     body{ padding: 4vh 14px 10vh; }
     .stage{ max-width: 580px; }
-    .card{ padding: 42px 32px; }
+    .card{ padding: 38px 28px; }
     .collections-grid{ grid-template-columns: 1fr 1fr; }
     .btn-row{ flex-direction: row; }
     .btn-row .btn{ flex: 1; }
+    address{ text-align: center; }
+    .divider-thin{ margin: 14px auto; }
+    .proclamation-wrap{ text-align: center; }
+    .section-label{ justify-content: center; }
+    .section-label::after{ display: none; }
   }
 
   /* Laptop & Widescreen Desktop Luxury Editorial Experience (>= 900px) */
@@ -918,58 +915,26 @@
     body{ padding: 5vh 24px 8vh; }
     .stage{ max-width: 1040px; }
     .card{
+      padding: 44px 44px 48px;
+    }
+
+    .editorial-body{
       display: grid;
-      grid-template-columns: 440px 1fr;
-      column-gap: 48px;
-      padding: 48px 44px;
-      text-align: left;
+      grid-template-columns: 430px 1fr;
+      column-gap: 46px;
+      align-items: start;
     }
 
     /* Left Column: Visual Showcase (Sticky Luxury Feature) */
     .col-visual{
-      grid-column: 1;
       position: sticky;
-      top: 36px;
-      margin-bottom: 0;
+      top: 32px;
     }
     .showcase-img{
-      max-height: 520px;
-    }
-    .visual-quote{
-      display: block;
+      max-height: 480px;
     }
 
-    /* Right Column: Editorial narrative, collection, Instagram, and actions */
-    .col-content{
-      grid-column: 2;
-    }
-    .brand-header{
-      text-align: left;
-      margin-bottom: 18px;
-    }
-    .mark-wrap{
-      margin: 0 0 8px 0;
-    }
-    .rule{
-      margin: 0 0 20px 0;
-      max-width: 100%;
-    }
-    .hero-proclamation{
-      text-align: left;
-    }
-    .festive-badge{
-      margin-bottom: 12px;
-    }
-    .about-story{
-      margin: 0 0 22px 0;
-      max-width: 100%;
-    }
-    .section-heading{
-      justify-content: flex-start;
-    }
-    .section-heading::before{
-      display: none;
-    }
+    /* Right Column: Flow */
     .collections-grid{
       grid-template-columns: 1fr 1fr;
     }
@@ -978,12 +943,6 @@
     }
     .btn-row .btn{
       flex: 1;
-    }
-    address{
-      text-align: left;
-    }
-    .divider-thin{
-      margin: 16px 0;
     }
 
     .floating-bar{ display: none; } /* Hide floating bar on laptops */
@@ -1004,7 +963,7 @@
   <!-- INTRO TIMELINE -->
   <div id="intro" aria-hidden="true">
     <div class="intro-mark-wrap">
-      <img class="intro-mark" src="stuti-logo-crop.png" alt="STUTI">
+      <img class="intro-mark" src="stuti-logo-transparent.png" alt="STUTI">
     </div>
     <p class="intro-word">STUTI</p>
     <p class="intro-tag">Rooted in tradition, made for you</p>
@@ -1016,170 +975,175 @@
     <main class="card">
       <div class="sheen" aria-hidden="true"></div>
 
-      <!-- LEFT COLUMN (DESKTOP) / INLINE VISUAL (MOBILE): SUITS PHOTO SHOWCASE -->
-      <aside class="col-visual visual-wrapper">
-        <a class="showcase-frame" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer" title="Explore our collection on Instagram">
-          <img class="showcase-img" src="stuti-suits.jpg" alt="STUTI Suits Collection on Display">
-          <div class="showcase-overlay">
-            <span class="showcase-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-              </svg>
-              In-Store Showcase · Tap to Explore
-            </span>
-            <div class="showcase-content">
-              <h3 class="showcase-title">Handpicked Designer Suits</h3>
-              <p class="showcase-sub">Fresh arrivals on display · See our Instagram for daily designs &rarr;</p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Luxury Quote on Desktop -->
-        <div class="visual-quote" aria-hidden="true">
-          <p class="quote-text">“Rooted in tradition, made for you.”</p>
-          <span class="quote-sub">Flagship Boutique · Jyoti Chowk, Jalandhar</span>
+      <!-- GRAND BRAND HEADER (CENTERED ROYAL CREST) -->
+      <header class="grand-header">
+        <div class="mark-wrap">
+          <img class="mark" src="stuti-logo-transparent.png" alt="STUTI Monogram Crest">
         </div>
-      </aside>
+        <h1 class="brand-text">STUTI</h1>
+        <p class="tagline">Rooted in tradition, made for you</p>
+        
+        <div class="festive-badge">
+          <!-- Diya icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2c-.6 2.5-2.5 4.5-2.5 6.5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5C14.5 6.5 12.6 4.5 12 2z"/>
+            <path d="M4 14c0 3.9 3.6 7 8 7s8-3.1 8-7H4z"/>
+          </svg>
+          Opened on the Auspicious Day of Diwali · 8 Nov 2026
+        </div>
 
-      <!-- RIGHT COLUMN (DESKTOP) / MAIN BODY (MOBILE): BRAND, COLLECTION, ACTIONS -->
-      <div class="col-content">
+        <div class="rule" aria-hidden="true"><span></span></div>
+      </header>
 
-        <!-- BRAND HEADER -->
-        <header class="brand-header">
-          <div class="mark-wrap">
-            <img class="mark" src="stuti-logo-crop.png" alt="STUTI Logo">
-          </div>
-          <h2 class="brand-text">STUTI</h2>
-          <p class="tagline">Rooted in tradition, made for you</p>
-          <div class="rule" aria-hidden="true"><span></span></div>
-        </header>
+      <!-- EDITORIAL BODY (2 EQUAL BALANCED PANELS ON LAPTOP) -->
+      <div class="editorial-body">
 
-        <!-- HEADING: NOW OPEN (DIWALI CELEBRATION) -->
-        <section class="hero-proclamation">
-          <div class="festive-badge">
-            <!-- Diya icon -->
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2c-.6 2.5-2.5 4.5-2.5 6.5 0 1.4 1.1 2.5 2.5 2.5s2.5-1.1 2.5-2.5C14.5 6.5 12.6 4.5 12 2z"/>
-              <path d="M4 14c0 3.9 3.6 7 8 7s8-3.1 8-7H4z"/>
-            </svg>
-            Opened on the Auspicious Day of Diwali · 8 Nov 2026
-          </div>
-
-          <h1 class="status">We Are Now Open</h1>
-          <p class="status-sub">In-Store &amp; Online Across India</p>
-          <p class="about-story">
-            Our flagship store opened its doors on the auspicious day of Diwali, <b>8th November 2026</b> near Jyoti Chowk, Jalandhar. We bring you handpicked unstitched fabrics and readymade suits curated with timeless grace. Experience the touch and drape at our showroom, or explore our vibrant collections on Instagram!
-          </p>
-        </section>
-
-        <!-- OUR SIGNATURE COLLECTION -->
-        <section class="collections-section">
-          <div class="section-heading">Our Collection</div>
-          <div class="collections-grid">
-
-            <!-- Unstitched Suits -->
-            <div class="col-card">
-              <div class="col-card-header">
-                <span class="col-card-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-                  </svg>
-                  Unstitched Suits
-                </span>
-                <span class="col-card-tag">Pure Fabrics</span>
+        <!-- LEFT COLUMN: VISUAL SUITS SHOWCASE -->
+        <aside class="col-visual">
+          <a class="showcase-frame" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer" title="Explore our collection on Instagram">
+            <img class="showcase-img" src="stuti-suits.jpg" alt="STUTI Suits Collection on Display">
+            <div class="showcase-overlay">
+              <span class="showcase-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+                In-Store Showcase · Tap to Explore
+              </span>
+              <div class="showcase-content">
+                <h3 class="showcase-title">Handpicked Designer Suits</h3>
+                <p class="showcase-sub">Fresh arrivals on display · See our Instagram for daily designs &rarr;</p>
               </div>
-              <p class="col-card-desc">Bespoke fabrics, delicate embroideries &amp; traditional lengths curated for your personal touch.</p>
             </div>
-
-            <!-- Readymade Suits -->
-            <div class="col-card">
-              <div class="col-card-header">
-                <span class="col-card-title">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
-                  </svg>
-                  Readymade Suits
-                </span>
-                <span class="col-card-tag">Tailored Grace</span>
-              </div>
-              <p class="col-card-desc">Exquisitely tailored ethnic wear &amp; elegant silhouettes ready to wear for every occasion.</p>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- INSTAGRAM DAILY FRESH ARRIVALS & ONLINE ORDERS -->
-        <section class="insta-banner">
-          <div class="live-pill">
-            <span class="live-dot"></span> Fresh Arrivals Dropping Daily
-          </div>
-          <h3 class="insta-title">
-            See Our Instagram for Our Collection: <a class="insta-handle" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
-          </h3>
-          <p class="insta-text">
-            We showcase our suits through daily posts and reels! Discover new designs, vibrant dupattas, and authentic drape videos before they sell out. We accept online orders via Instagram DMs and WhatsApp with swift pan-India delivery.
-          </p>
-          <div class="perks-row">
-            <span class="perk-tag">✓ Daily Posts &amp; Reels</span>
-            <span class="perk-tag">✓ Instant DM Assistance</span>
-            <span class="perk-tag">✓ WhatsApp Orders</span>
-            <span class="perk-tag">✓ Pan-India Delivery</span>
-          </div>
-        </section>
-
-        <!-- GOOGLE REVIEWS & 5-STAR RATING PROMPT -->
-        <section class="review-card">
-          <div class="review-stars" aria-label="5 Star Rating">★★★★★</div>
-          <h4 class="review-title">Love Our Suits? Give Us a Google Rating!</h4>
-          <p class="review-prompt">
-            Visited our showroom or received your order? <b>Please give us a review &amp; 5-star rating on Google Maps</b> to help our local boutique blossom!
-          </p>
-        </section>
-
-        <!-- PRIMARY ACTION CTAs -->
-        <nav class="actions-group" aria-label="Main Actions">
-          <div class="btn-row">
-            <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
-              <!-- WhatsApp SVG -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
-                <path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.7 1.6.75 1.7.05.1.1.25 0 .4-.1.15-.15.25-.3.4l-.4.45c-.15.15-.3.3-.15.55.15.25.7 1.2 1.5 1.95 1 1 1.9 1.3 2.15 1.45.25.15.4.1.55-.05l.6-.7c.2-.25.4-.2.65-.1l1.5.7c.25.1.4.15.45.25.05.15.05.75-.2 1.4-.25.65-1.4 1.25-1.95 1.3-.5.1-1.15.15-3.3-.7-2.7-1.1-4.4-3.85-4.55-4.05-.15-.2-1.1-1.45-1.1-2.75 0-1.3.7-1.95.9-2.2z"/>
-              </svg>
-              Order on WhatsApp
-            </a>
-
-            <a class="btn btn-secondary" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">
-              <!-- Instagram SVG -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
-              </svg>
-              Visit Instagram Page
-            </a>
-          </div>
-
-          <a class="btn btn-maps" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
-            <!-- Google Maps Pin SVG -->
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
-              <circle cx="12" cy="9" r="2.5"/>
-            </svg>
-            Navigate &amp; Rate Us on Google Maps
           </a>
-        </nav>
 
-        <!-- SHOWROOM LOCATION & CONTACT -->
-        <address>
-          <div class="divider-thin" aria-hidden="true"></div>
-          <span class="addr-label">Store Location</span><br>
-          ES45, Ground Floor, Nakodar Road<br>
-          Near Jyoti Chowk — opposite Jyoti Mall &amp; Domino's<br>
-          Jalandhar, Punjab – 144001<br><br>
-          <a href="tel:+917696764505">+91 76967 64505</a><br>
-          <a href="mailto:stutijalandhar@gmail.com">Email us at stutijalandhar@gmail.com</a>
-        </address>
+          <!-- Boutique Showroom Highlight -->
+          <div class="visual-caption">
+            <p class="caption-lead">Flagship Showroom in Jalandhar</p>
+            <p class="caption-sub">Experience the touch and drape of pure fabrics in person, or order online across India.</p>
+          </div>
+        </aside>
 
+        <!-- RIGHT COLUMN: PROCLAMATION, COLLECTIONS & ACTIONS -->
+        <div class="col-content">
+
+          <!-- NOW OPEN PROCLAMATION -->
+          <section class="proclamation-wrap">
+            <h2 class="status">We Are Now Open</h2>
+            <p class="status-sub">In-Store &amp; Online Across India</p>
+            <p class="about-story">
+              Our flagship boutique opened its doors on the auspicious day of Diwali, <b>8th November 2026</b> near Jyoti Chowk, Jalandhar. We bring you handpicked unstitched fabrics and readymade suits curated with timeless grace. Visit our showroom or explore our newest arrivals on Instagram!
+            </p>
+          </section>
+
+          <!-- OUR SIGNATURE COLLECTION -->
+          <section class="collections-section">
+            <div class="section-label">Our Collection</div>
+            <div class="collections-grid">
+
+              <!-- Unstitched Suits -->
+              <div class="col-card">
+                <div class="col-card-header">
+                  <span class="col-card-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    Unstitched Suits
+                  </span>
+                  <span class="col-card-tag">Pure Fabrics</span>
+                </div>
+                <p class="col-card-desc">Bespoke fabrics, delicate embroideries &amp; traditional lengths curated for your personal touch.</p>
+              </div>
+
+              <!-- Readymade Suits -->
+              <div class="col-card">
+                <div class="col-card-header">
+                  <span class="col-card-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"/>
+                    </svg>
+                    Readymade Suits
+                  </span>
+                  <span class="col-card-tag">Tailored Grace</span>
+                </div>
+                <p class="col-card-desc">Exquisitely tailored ethnic wear &amp; elegant silhouettes ready to wear for every occasion.</p>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- INSTAGRAM DAILY FRESH ARRIVALS -->
+          <section class="insta-banner">
+            <div class="live-pill">
+              <span class="live-dot"></span> Fresh Arrivals Dropping Daily
+            </div>
+            <h3 class="insta-title">
+              See Our Instagram: <a class="insta-handle" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
+            </h3>
+            <p class="insta-text">
+              We showcase our suits through daily posts and reels! Discover new designs and drape videos before they sell out. We accept online orders via Instagram DMs and WhatsApp with swift pan-India delivery.
+            </p>
+            <div class="perks-row">
+              <span class="perk-tag">✓ Daily Posts &amp; Reels</span>
+              <span class="perk-tag">✓ Instant DM Assistance</span>
+              <span class="perk-tag">✓ WhatsApp Orders</span>
+              <span class="perk-tag">✓ Pan-India Delivery</span>
+            </div>
+          </section>
+
+          <!-- GOOGLE REVIEWS & 5-STAR RATING PROMPT -->
+          <section class="review-card">
+            <div class="review-stars" aria-label="5 Star Rating">★★★★★</div>
+            <h4 class="review-title">Love Our Suits? Give Us a Google Rating!</h4>
+            <p class="review-prompt">
+              Visited our showroom or received your order? <b>Please give us a review &amp; 5-star rating on Google Maps</b> to help our local boutique blossom!
+            </p>
+          </section>
+
+          <!-- PRIMARY ACTION CTAs -->
+          <nav class="actions-group" aria-label="Main Actions">
+            <div class="btn-row">
+              <a class="btn btn-primary" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer">
+                <!-- WhatsApp SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
+                  <path d="M8.5 8.7c.2-.5.4-.5.6-.5h.5c.15 0 .35 0 .5.4.2.5.7 1.6.75 1.7.05.1.1.25 0 .4-.1.15-.15.25-.3.4l-.4.45c-.15.15-.3.3-.15.55.15.25.7 1.2 1.5 1.95 1 1 1.9 1.3 2.15 1.45.25.15.4.1.55-.05l.6-.7c.2-.25.4-.2.65-.1l1.5.7c.25.1.4.15.45.25.05.15.05.75-.2 1.4-.25.65-1.4 1.25-1.95 1.3-.5.1-1.15.15-3.3-.7-2.7-1.1-4.4-3.85-4.55-4.05-.15-.2-1.1-1.45-1.1-2.75 0-1.3.7-1.95.9-2.2z"/>
+                </svg>
+                Order on WhatsApp
+              </a>
+
+              <a class="btn btn-secondary" href="https://instagram.com/stuti_jalandhar" target="_blank" rel="noopener noreferrer">
+                <!-- Instagram SVG -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.2" cy="6.8" r="0.8" fill="currentColor" stroke="none"/>
+                </svg>
+                Visit Instagram Page
+              </a>
+            </div>
+
+            <a class="btn btn-maps" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
+              <!-- Google Maps Pin SVG -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Navigate &amp; Rate Us on Google Maps
+            </a>
+          </nav>
+
+          <!-- SHOWROOM LOCATION & CONTACT -->
+          <address>
+            <div class="divider-thin" aria-hidden="true"></div>
+            <span class="addr-label">Store Location</span><br>
+            ES45, Ground Floor, Nakodar Road<br>
+            Near Jyoti Chowk — opposite Jyoti Mall &amp; Domino's<br>
+            Jalandhar, Punjab – 144001<br><br>
+            <a href="tel:+917696764505">+91 76967 64505</a><br>
+            <a href="mailto:stutijalandhar@gmail.com">Email us at stutijalandhar@gmail.com</a>
+          </address>
+
+        </div>
       </div>
     </main>
   </div>
