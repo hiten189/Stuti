@@ -7,6 +7,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="format-detection" content="telephone=no">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 
 <!-- Primary SEO Meta Tags (Optimized for "STUTI Jalandhar", "readymade suits", "unstitched suits", "jyoti chowk") -->
 <title>STUTI Jalandhar — Designer Readymade &amp; Unstitched Suits | Flagship Showroom</title>
@@ -215,7 +216,7 @@
     100% { opacity: 0.8; transform: translate3d(-50%, -50%, 0) scale(1.05); }
   }
 
-  /* Drifting ambient gold sparks (Hardware Accelerated on iPhone Metal & Android GPU) */
+  /* Ethereal ambient gold stardust (Natural fading, organic drift, 100% GPU accelerated) */
   .sparks{ 
     position: fixed; 
     top: 0; left: 0; right: 0; bottom: 0;
@@ -228,22 +229,91 @@
   }
   .spark{
     position: absolute;
-    width: 3px; height: 3px;
-    background: var(--gold-soft);
     border-radius: 50%;
-    box-shadow: 0 0 8px 1px rgba(244, 220, 158, 0.75);
-    opacity: 0.7;
+    background: var(--gold-soft);
+    opacity: 0;
     will-change: transform, opacity;
-    -webkit-animation: sparkTwinkle 6s ease-in-out infinite;
-    animation: sparkTwinkle 6s ease-in-out infinite;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
-  @-webkit-keyframes sparkTwinkle {
-    0%, 100% { opacity: 0.25; -webkit-transform: scale(0.7) translate3d(0, 0, 0); }
-    50% { opacity: 1; -webkit-transform: scale(1.35) translate3d(0, -6px, 0); }
+  .spark-micro{
+    width: 1.5px; height: 1.5px;
+    box-shadow: 0 0 5px 1px rgba(244, 220, 158, 0.45);
   }
-  @keyframes sparkTwinkle {
-    0%, 100% { opacity: 0.25; transform: scale(0.7) translate3d(0, 0, 0); }
-    50% { opacity: 1; transform: scale(1.35) translate3d(0, -6px, 0); }
+  .spark-mid{
+    width: 2.2px; height: 2.2px;
+    box-shadow: 0 0 7px 1px rgba(244, 220, 158, 0.65);
+  }
+  .spark-bright{
+    width: 3px; height: 3px;
+    box-shadow: 0 0 9px 1.5px rgba(244, 220, 158, 0.85);
+  }
+
+  /* 4 Organic Multi-Directional Drift Choreographies (Fade in from 0, drift, fade away to 0) */
+  .drift-1{ -webkit-animation: driftUpRight var(--dur, 8s) ease-in-out infinite; animation: driftUpRight var(--dur, 8s) ease-in-out infinite; }
+  .drift-2{ -webkit-animation: driftUpLeft var(--dur, 9s) ease-in-out infinite; animation: driftUpLeft var(--dur, 9s) ease-in-out infinite; }
+  .drift-3{ -webkit-animation: driftSway var(--dur, 7.5s) ease-in-out infinite; animation: driftSway var(--dur, 7.5s) ease-in-out infinite; }
+  .drift-4{ -webkit-animation: driftDown var(--dur, 10s) ease-in-out infinite; animation: driftDown var(--dur, 10s) ease-in-out infinite; }
+
+  @-webkit-keyframes driftUpRight {
+    0% { opacity: 0; -webkit-transform: translate3d(0, 0, 0) scale(0.3); }
+    25% { opacity: 0.75; -webkit-transform: translate3d(7px, -15px, 0) scale(0.95); }
+    55% { opacity: 0.85; -webkit-transform: translate3d(16px, -32px, 0) scale(1.1); }
+    80% { opacity: 0.4; -webkit-transform: translate3d(22px, -48px, 0) scale(0.8); }
+    100% { opacity: 0; -webkit-transform: translate3d(28px, -64px, 0) scale(0.25); }
+  }
+  @keyframes driftUpRight {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) scale(0.3); }
+    25% { opacity: 0.75; transform: translate3d(7px, -15px, 0) scale(0.95); }
+    55% { opacity: 0.85; transform: translate3d(16px, -32px, 0) scale(1.1); }
+    80% { opacity: 0.4; transform: translate3d(22px, -48px, 0) scale(0.8); }
+    100% { opacity: 0; transform: translate3d(28px, -64px, 0) scale(0.25); }
+  }
+
+  @-webkit-keyframes driftUpLeft {
+    0% { opacity: 0; -webkit-transform: translate3d(0, 0, 0) scale(0.3); }
+    25% { opacity: 0.8; -webkit-transform: translate3d(-9px, -16px, 0) scale(1); }
+    55% { opacity: 0.85; -webkit-transform: translate3d(-18px, -36px, 0) scale(1.1); }
+    80% { opacity: 0.4; -webkit-transform: translate3d(-24px, -52px, 0) scale(0.75); }
+    100% { opacity: 0; -webkit-transform: translate3d(-30px, -68px, 0) scale(0.25); }
+  }
+  @keyframes driftUpLeft {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) scale(0.3); }
+    25% { opacity: 0.8; transform: translate3d(-9px, -16px, 0) scale(1); }
+    55% { opacity: 0.85; transform: translate3d(-18px, -36px, 0) scale(1.1); }
+    80% { opacity: 0.4; transform: translate3d(-24px, -52px, 0) scale(0.75); }
+    100% { opacity: 0; transform: translate3d(-30px, -68px, 0) scale(0.25); }
+  }
+
+  @-webkit-keyframes driftSway {
+    0% { opacity: 0; -webkit-transform: translate3d(0, 0, 0) scale(0.3); }
+    30% { opacity: 0.85; -webkit-transform: translate3d(6px, -10px, 0) scale(1.1); }
+    55% { opacity: 0.45; -webkit-transform: translate3d(2px, -18px, 0) scale(0.85); }
+    75% { opacity: 0.8; -webkit-transform: translate3d(-5px, -26px, 0) scale(1.05); }
+    100% { opacity: 0; -webkit-transform: translate3d(0, -36px, 0) scale(0.25); }
+  }
+  @keyframes driftSway {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) scale(0.3); }
+    30% { opacity: 0.85; transform: translate3d(6px, -10px, 0) scale(1.1); }
+    55% { opacity: 0.45; transform: translate3d(2px, -18px, 0) scale(0.85); }
+    75% { opacity: 0.8; transform: translate3d(-5px, -26px, 0) scale(1.05); }
+    100% { opacity: 0; transform: translate3d(0, -36px, 0) scale(0.25); }
+  }
+
+  @-webkit-keyframes driftDown {
+    0% { opacity: 0; -webkit-transform: translate3d(0, 0, 0) scale(0.3); }
+    30% { opacity: 0.65; -webkit-transform: translate3d(5px, 14px, 0) scale(0.9); }
+    60% { opacity: 0.8; -webkit-transform: translate3d(-5px, 28px, 0) scale(1.05); }
+    85% { opacity: 0.35; -webkit-transform: translate3d(3px, 40px, 0) scale(0.75); }
+    100% { opacity: 0; -webkit-transform: translate3d(0, 52px, 0) scale(0.2); }
+  }
+  @keyframes driftDown {
+    0% { opacity: 0; transform: translate3d(0, 0, 0) scale(0.3); }
+    30% { opacity: 0.65; transform: translate3d(5px, 14px, 0) scale(0.9); }
+    60% { opacity: 0.8; transform: translate3d(-5px, 28px, 0) scale(1.05); }
+    85% { opacity: 0.35; transform: translate3d(3px, 40px, 0) scale(0.75); }
+    100% { opacity: 0; transform: translate3d(0, 52px, 0) scale(0.2); }
   }
 
   /* =========================================================
@@ -255,7 +325,7 @@
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 16px calc(115px + env(safe-area-inset-bottom, 20px));
     text-align: center;
     /* Instantaneous rock-solid load without vanished/popping elements */
     opacity: 1;
@@ -271,46 +341,48 @@
 
   .mark-wrap{
     position: relative;
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 10px;
+    width: clamp(140px, 22vw, 195px);
+    aspect-ratio: 312 / 555;
+    margin: 0 auto 16px;
     display: inline-block;
   }
   .mark-wrap::before{
     content: '';
     position: absolute;
-    inset: -25%;
-    background: radial-gradient(circle, rgba(220, 179, 67, 0.35) 0%, transparent 70%);
-    filter: blur(18px);
-    -webkit-filter: blur(18px);
-    -webkit-animation: pulseLogo 4s ease-in-out infinite alternate;
-    animation: pulseLogo 4s ease-in-out infinite alternate;
+    inset: -10% -12%;
+    background: radial-gradient(ellipse at 50% 48%, rgba(220, 179, 67, 0.22) 0%, rgba(184, 134, 11, 0.08) 42%, transparent 70%);
+    filter: blur(16px);
+    -webkit-filter: blur(16px);
+    -webkit-animation: pulseLogo 5.5s ease-in-out infinite alternate;
+    animation: pulseLogo 5.5s ease-in-out infinite alternate;
     z-index: 0;
   }
   @-webkit-keyframes pulseLogo{
-    from{ opacity: 0.5; -webkit-transform: scale(0.94); }
-    to{ opacity: 0.95; -webkit-transform: scale(1.06); }
+    from{ opacity: 0.35; -webkit-transform: scale(0.96); }
+    to{ opacity: 0.62; -webkit-transform: scale(1.02); }
   }
   @keyframes pulseLogo{
-    from{ opacity: 0.5; transform: scale(0.94); }
-    to{ opacity: 0.95; transform: scale(1.06); }
+    from{ opacity: 0.35; transform: scale(0.96); }
+    to{ opacity: 0.62; transform: scale(1.02); }
   }
 
   .mark{
     position: relative;
     z-index: 1;
-    width: 130px;
-    height: 130px;
+    width: 100%;
+    height: 100%;
     display: block;
     object-fit: contain;
-    filter: drop-shadow(0 10px 22px rgba(0,0,0,0.7));
-    -webkit-filter: drop-shadow(0 10px 22px rgba(0,0,0,0.7));
-    transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.82)) drop-shadow(0 0 8px rgba(244, 220, 158, 0.18));
+    -webkit-filter: drop-shadow(0 12px 24px rgba(0,0,0,0.82)) drop-shadow(0 0 8px rgba(244, 220, 158, 0.18));
+    transition: transform .45s cubic-bezier(0.16, 1, 0.3, 1), filter .45s ease;
   }
   @media (hover: hover) and (pointer: fine) {
     .mark-wrap:hover .mark{ 
-      -webkit-transform: scale(1.04); 
-      transform: scale(1.04); 
+      -webkit-transform: scale(1.03) translateY(-2px); 
+      transform: scale(1.03) translateY(-2px); 
+      filter: drop-shadow(0 16px 30px rgba(0,0,0,0.9)) drop-shadow(0 0 12px rgba(220, 179, 67, 0.3));
+      -webkit-filter: drop-shadow(0 16px 30px rgba(0,0,0,0.9)) drop-shadow(0 0 12px rgba(220, 179, 67, 0.3));
     }
   }
 
@@ -321,6 +393,7 @@
     letter-spacing: 0.28em;
     margin-right: -0.28em;
     margin-bottom: 4px;
+    white-space: nowrap;
     color: var(--gold-bright);
     background: linear-gradient(110deg, var(--gold-soft) 10%, #ffffff 40%, var(--gold) 75%, var(--gold-soft) 100%);
     background-size: 200% auto;
@@ -731,11 +804,12 @@
   }
   .addr-title{
     font-family: var(--serif);
-    font-size: 1.7rem;
+    font-size: clamp(1.35rem, 4.8vw, 1.8rem);
     color: var(--gold-bright);
     font-weight: 600;
     margin-bottom: 8px;
     letter-spacing: 0.12em;
+    white-space: nowrap;
     text-shadow: 0 2px 10px rgba(0,0,0,0.8);
   }
   .addr-lines{
@@ -960,9 +1034,11 @@
   /* Ultra-narrow devices (Samsung Galaxy Fold cover screen: ~280px - 350px) */
   @media (max-width: 350px){
     .flow-container{ padding: 0 8px; }
-    .mark-wrap{ width: 100px; height: 100px; }
-    .mark{ width: 100px; height: 100px; }
-    .brand-text{ font-size: 2.4rem; letter-spacing: 0.18em; }
+    .mark-wrap{ width: 100px; }
+    .mark{ width: 100%; height: 100%; }
+    .brand-text{ font-size: 2.4rem; letter-spacing: 0.18em; margin-right: -0.18em; }
+    .addr-title{ font-size: 1.25rem; letter-spacing: 0.08em; }
+    .footer-tagline{ font-size: 1.05rem; letter-spacing: 0.1em; }
     .tagline{ font-size: 1.05rem; }
     .festive-badge{ font-size: 0.68rem; padding: 7px 14px; gap: 6px; }
     .showcase-img{ max-height: 320px; }
@@ -985,6 +1061,35 @@
   /* Tablets & Fold Unfolded (480px - 680px) */
   @media (min-width: 480px) and (max-width: 680px){
     .contact-grid{ grid-template-columns: 1fr 1fr; }
+  }
+
+  /* Dignified Minimalist Footer */
+  .brand-footer{
+    margin: 32px auto 20px;
+    padding: 24px 16px 0;
+    text-align: center;
+    border-top: 1px solid rgba(220, 179, 67, 0.2);
+    max-width: 520px;
+  }
+  .footer-tagline{
+    font-family: var(--serif);
+    font-size: clamp(1.1rem, 3.8vw, 1.3rem);
+    letter-spacing: 0.18em;
+    white-space: nowrap;
+    color: var(--gold-bright);
+    margin-bottom: 6px;
+  }
+  .footer-sub{
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.96rem;
+    color: var(--gold-soft);
+    margin-bottom: 8px;
+  }
+  .footer-copy{
+    font-size: 0.68rem;
+    color: rgba(220, 179, 67, 0.45);
+    letter-spacing: 0.06em;
   }
 
   /* Accessible motion fallback: Preserves visibility while disabling heavy animations */
@@ -1018,7 +1123,7 @@
     <!-- 1. BRAND HERO: CREST, STUTI & TAGLINE -->
     <header class="brand-header">
       <div class="mark-wrap">
-        <img class="mark" src="stuti-logo-transparent.png" alt="STUTI Monogram Crest" width="130" height="130" fetchpriority="high" decoding="async">
+        <img class="mark" src="stuti-logo-transparent.png" alt="STUTI Monogram Crest" width="312" height="555" fetchpriority="high" decoding="async">
       </div>
       <h1 class="brand-text">STUTI</h1>
       <p class="tagline">Rooted in tradition, made for you</p>
@@ -1041,7 +1146,7 @@
 
     <!-- 2. GRAND IN-STORE SUITS SHOWCASE (HERO 4K HOOK) -->
     <section class="showcase-wrapper">
-      <a class="showcase-frame" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener" title="Explore our collection on Instagram">
+      <a class="showcase-frame" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener noreferrer" title="Explore our collection on Instagram">
         <img class="showcase-img" src="stuti-suits.jpg" alt="STUTI Suits Collection on Display in Jalandhar" width="720" height="480" fetchpriority="high">
         <div class="showcase-overlay">
           
@@ -1103,7 +1208,7 @@
     <section class="insta-section">
       <div class="section-kicker">✦ Fresh Arrivals Dropping Daily on Instagram ✦</div>
       <h3 class="insta-title">
-        See Our Instagram: <a class="insta-handle" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener">@stuti_jalandhar</a>
+        See Our Instagram: <a class="insta-handle" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener noreferrer">@stuti_jalandhar</a>
       </h3>
       <p class="insta-text">
         We showcase our suits through daily posts and reels! Discover new designs and drape videos before they sell out. We accept online orders via Instagram DMs and WhatsApp with swift pan-India delivery.
@@ -1115,7 +1220,7 @@
         <span class="perk-tag">✦ Pan-India Delivery</span>
       </div>
       <div>
-        <a class="gold-action-btn" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener">
+        <a class="gold-action-btn" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener noreferrer">
           Visit Instagram Page &rarr;
         </a>
       </div>
@@ -1126,14 +1231,14 @@
     <!-- 5. SHOWROOM LOCATION (BORDERLESS FLOW, NO RECTANGULAR BOX) -->
     <section class="address-section">
       <div class="section-label">Store Location</div>
-      <h3 class="addr-title">STUTI</h3>
+      <h3 class="addr-title">STUTI JALANDHAR</h3>
       <p class="addr-lines">
         Upper Ground Floor, Nakodar Road<br>
         Near Jyoti Chowk, opposite Dominos (Hotel Royal Court)<br>
         Jalandhar, Punjab - 144001
       </p>
       <div>
-        <a class="gold-action-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener">
+        <a class="gold-action-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;color:var(--gold);margin-right:2px;">
             <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
             <circle cx="12" cy="9" r="2.5"/>
@@ -1174,7 +1279,7 @@
         </a>
 
         <!-- Col 3: Instagram (Canonical Deep Link) -->
-        <a class="contact-item" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener" title="Instagram Profile">
+        <a class="contact-item" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener noreferrer" title="Instagram Profile">
           <span class="contact-type">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
@@ -1187,7 +1292,7 @@
         </a>
 
         <!-- Col 4: WhatsApp -->
-        <a class="contact-item" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener" title="WhatsApp Chat">
+        <a class="contact-item" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" title="WhatsApp Chat">
           <span class="contact-type">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
@@ -1199,7 +1304,7 @@
         </a>
 
         <!-- Col 5: Facebook (Canonical Profile) -->
-        <a class="contact-item" href="https://www.facebook.com/people/Stuti-Jalandhar/61595016325608/" target="_blank" rel="noopener" title="Facebook Page">
+        <a class="contact-item" href="https://www.facebook.com/people/Stuti-Jalandhar/61595016325608/" target="_blank" rel="noopener noreferrer" title="Facebook Page">
           <span class="contact-type">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -1210,7 +1315,7 @@
         </a>
 
         <!-- Col 6: YouTube (Placed directly below Instagram) -->
-        <a class="contact-item" href="https://www.youtube.com/@Stuti_Jalandhar" target="_blank" rel="noopener" title="YouTube Channel">
+        <a class="contact-item" href="https://www.youtube.com/@Stuti_Jalandhar" target="_blank" rel="noopener noreferrer" title="YouTube Channel">
           <span class="contact-type">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
@@ -1233,11 +1338,18 @@
         Visited our showroom or received your order? <b>Please give us a review &amp; 5-star rating on Google Maps</b> to help our family showroom blossom!
       </p>
       <div>
-        <a class="gold-action-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener">
+        <a class="gold-action-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer">
           Tap to Rate Us on Google Maps &rarr;
         </a>
       </div>
     </section>
+
+    <!-- 8. DIGNIFIED BRAND FOOTER -->
+    <footer class="brand-footer">
+      <div class="footer-tagline">STUTI</div>
+      <p class="footer-sub">Rooted in tradition, made for you</p>
+      <p class="footer-copy">© 2026 STUTI. All rights reserved.</p>
+    </footer>
 
   </main>
 
@@ -1251,7 +1363,7 @@
       <span>Call</span>
     </a>
 
-    <a class="dock-btn" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener" title="Chat on WhatsApp">
+    <a class="dock-btn" href="https://wa.me/917696764505?text=Hi%20STUTI%2C%20I%20saw%20your%20collection%20and%20would%20like%20to%20order" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
       <!-- WhatsApp SVG -->
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M12 3a9 9 0 0 0-7.75 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z"/>
@@ -1260,7 +1372,7 @@
       <span>WhatsApp</span>
     </a>
 
-    <a class="dock-btn" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener" title="Explore Instagram">
+    <a class="dock-btn" href="https://www.instagram.com/stuti_jalandhar/" target="_blank" rel="noopener noreferrer" title="Explore Instagram">
       <!-- Instagram SVG -->
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
@@ -1270,7 +1382,7 @@
       <span>Instagram</span>
     </a>
 
-    <a class="dock-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener" title="Navigate on Google Maps">
+    <a class="dock-btn" href="https://maps.app.goo.gl/ZurJmbqXFEqZykMXA" target="_blank" rel="noopener noreferrer" title="Navigate on Google Maps">
       <!-- Google Maps Pin SVG -->
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7z"/>
@@ -1282,18 +1394,29 @@
 
 <script>
 (function(){
-  // Scattered ambient gold sparks with rock-solid percentage coordinates for iOS & Android
+  // Organic ambient stardust: natural drift, fade-in/fade-out, individual lifecycles
   var field = document.querySelector('.sparks');
   if(field){
-    var n = 32;
+    var isDesktop = window.innerWidth >= 768;
+    var n = isDesktop ? 42 : 28;
     var fragment = document.createDocumentFragment();
+    var sizeClasses = ['spark-micro', 'spark-micro', 'spark-mid', 'spark-micro', 'spark-mid', 'spark-bright'];
+    var driftClasses = ['drift-1', 'drift-2', 'drift-3', 'drift-4'];
+    
     for(var i = 0; i < n; i++){
       var s = document.createElement('div');
-      s.className = 'spark';
-      s.style.left = (2 + Math.random() * 96) + '%';
-      s.style.top = (2 + Math.random() * 96) + '%';
-      s.style.animationDelay = (Math.random() * 6).toFixed(2) + 's';
-      s.style.animationDuration = (3.5 + Math.random() * 3.5).toFixed(2) + 's';
+      var size = sizeClasses[i % sizeClasses.length];
+      var drift = driftClasses[i % driftClasses.length];
+      var dur = (6.5 + Math.random() * 4.5).toFixed(2) + 's';
+      var delay = (Math.random() * 8.5).toFixed(2) + 's';
+      
+      s.className = 'spark ' + size + ' ' + drift;
+      s.style.left = (1.5 + Math.random() * 97).toFixed(2) + '%';
+      s.style.top = (1.5 + Math.random() * 97).toFixed(2) + '%';
+      s.style.animationDuration = dur;
+      s.style.webkitAnimationDuration = dur;
+      s.style.animationDelay = delay;
+      s.style.webkitAnimationDelay = delay;
       fragment.appendChild(s);
     }
     field.appendChild(fragment);
